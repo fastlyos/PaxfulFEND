@@ -1,0 +1,127 @@
+<app-navbar></app-navbar>
+<section class="BackGroundColo">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 TradeTitle">
+				<h2>TRADE HISTORY</h2>
+				<p>All your trades</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="BackGroundColor">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-lg-12 mt-4">
+				<div>
+					<ul class="Trade-list">
+						<li class="activeFilter"><a class="">All</a></li>
+						<li class=""><a>Buy</a></li>
+						<li class=""><a>Sell</a></li>
+						<li class=""><a>Successful</a></li>
+						<li class=""><a>Cancelled</a></li>
+						<li class=""><a>Dispute</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="BackGroundColor">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<form class="form-inline Trade-Form">
+  <label>Start Date:</label>
+  <!-- <input type="text" name=""> -->
+  <mat-form-field>
+	<input matInput [matDatepicker] = "picker" placeholder = "" autocomplete="off">
+	<mat-datepicker-toggle matSuffix [for] = "picker"></mat-datepicker-toggle>
+	<mat-datepicker #picker panelClass="datepickerTwo"></mat-datepicker>
+ </mat-form-field>
+  <label>End Date:</label>
+  <!-- <input type="text" name=""> -->
+  <mat-form-field>
+	<input matInput [matDatepicker] = "picker1" placeholder = "">
+	<mat-datepicker-toggle matSuffix [for] = "picker1"></mat-datepicker-toggle>
+	<mat-datepicker #picker1></mat-datepicker>
+ </mat-form-field> 
+  <button class="btn btnFilter">Filter</button>
+  <button type="submit" class="btn f-button">Export Trade as CSV</button>
+</form>
+				</div>
+				<div class="col-lg-12 mt-4">
+					<a href="#ExportFlie" data-toggle="collapse">Show exported files</a>	
+					<div class="collapse" id="ExportFlie">
+						<div id="past-trades" class="trade table-responsive 	js-fullstory-exclude" style="display: block;">
+                    	    <table class="table table-hover">
+                     	       <thead>
+                        	    <tr>
+                            	    <th>Type</th>
+                                	<th>Started</th>
+                            		<th>Completed</th>
+                                	<th>Status</th>
+                                	<th>Actions</th>
+                            	</tr>
+                            	</thead>
+                            	<tbody>
+                            		<tr class="trade nobottommargin">
+                                    	<td>All</td>
+                                    	<td>Dec 10, 2019 05:13</td>
+                                    	<td>-</td>
+                                    	<td>No data found for report</td>
+                                    	<td>-</td>
+                                	</tr>          
+                            	</tbody>
+                    		</table>
+                    	</div>	
+					</div>
+				</div>
+		</div>
+	</div>
+</section>
+
+<section class="BackGroundColor">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 mt-4">
+				<div>
+					<p class="lead nomargin">Successful trades on current page: 0 out of 0 = <strong>0%</strong></p>
+                    <p class="lead js-fullstory-exclude">Successful trades turnaround: total 0 BTC.</p>
+				</div>
+				<div class="trade table-responsive js-fullstory-exclude">
+                    
+                    <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>In bitcoin</th>
+                            <th>Rate</th>
+                            <th>Fee</th>
+                            <th>Method</th>
+                            <th>Partner</th>
+                            <th>Status</th>
+                            <th>Completed</th>
+                            <th>Trade</th>
+                            <th>Offer</th>
+                        </tr>
+                    </thead>
+                    <tbody class="js-fullstory-exclude">
+                        <tr>
+                    	    <td colspan="12">	
+                        		<span class="text-center">No completed trades 	yet.
+                        			<a href="">Get out there and make some trades</a>
+                    			</span>
+                        	</td>
+                        </tr>
+                    </tbody>
+	                </table>
+
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+<app-footer></app-footer>

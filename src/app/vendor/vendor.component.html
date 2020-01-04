@@ -1,0 +1,198 @@
+<app-navbar></app-navbar>
+<section>
+  <div class="container-fluid">
+      <div class="row text-center" style="background-image: url('assets/images/bitcoin.jpeg');background-size: cover;">
+          <div class="col-lg-12" style="background-color: #4DBAC0;height: 950px;opacity: .9">
+              <div class="vendor-section1 text-center">
+                  <h2>A NEW WORLD OF OPPORTUNITY!</h2></div>
+                  <div class="vendor-section1 text-center">
+                  <p>Thanks to Bitcoin normal people can start their own fintech business and prosper helping other newbie folks use their money.</p></div>
+              
+
+              <div class="col-lg-12" fxLayoutAlign="center center"> 
+                <iframe src="https://www.youtube.com/embed/yU0oG4TyMKo" height="500" width="700"></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="heading-block text-center">
+                  <h2>Dive into the world of bitcoin with us. </h2>
+                  <span>This is the greatest innovation of our time and you are being introduced to it.</span>
+        </div>
+              <p class="text-center title-help col-lg-12 block-center">I’m Ray, the CEO of Paxful. Just a few years ago I was broke in New York and started selling bitcoin to make ends meet. I couldn’t have imagined how big this could be for me, this is why I created Paxful to share this opportunity with you.</p>
+              <p class="text-center title-help col-md-12 block-center topmargin-sm bottommargin-sm"><strong>Take control of your future and become one of our Paxful vendors!</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabs">
+    
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">BTC</label>
+       
+       <div class="content">
+                             <div class="graph_blk">
+                     <highcharts-chart 
+                         [Highcharts] = "highcharts" 
+                         [options] = "chartOptions" 
+                         style = "width: 100%; height: 300px; display: block;">
+                      </highcharts-chart>
+                  </div>
+       </div> 
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">ERK</label>
+       
+       <div class="content">
+                   <div class="graph_blk">
+                     <highcharts-chart 
+                         [Highcharts] = "highcharts1" 
+                         [options] = "chartOptions1" 
+                         style = "width: 100%; height: 300px; display: block;">
+                      </highcharts-chart>
+                  </div>
+       </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">CNY</label>
+     
+       <div class="content">
+                            <div class="graph_blk">
+                     <highcharts-chart 
+                         [Highcharts] = "highcharts2" 
+                         [options] = "chartOptions2" 
+                         style = "width: 100%; height: 300px; display: block;">
+                      </highcharts-chart>
+                  </div>
+       </div> 
+   </div>
+    
+</div>
+    </div>
+     <div class="c-wallet-pros" style="margin-top: 130px;">
+                            <div class="c-wallet-pros__item">
+                                <span class="c-wallet-pros__number">0%</span>
+                                <span class="c-wallet-pros__text">No commision fees</span>
+                            </div>
+                            <div class="c-wallet-pros__item">
+                                <span class="c-wallet-pros__number">480,000<small>+</small></span>
+                                <span class="c-wallet-pros__text">bitcoins bought</span>
+                            </div>
+                            <div class="c-wallet-pros__item">
+                                <span class="c-wallet-pros__number">2.066.391</span>
+                                <span class="c-wallet-pros__text">Paxful bitcoin wallets</span>
+                            </div>
+                        </div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid table-background" fxLayout="center center">
+    <div class="row"> 
+      <div class="col-lg-12">
+        <div class="heading-block center">
+          <h2>Weekly top payment methods</h2>
+        </div>
+        <div class="block-center col-md-6 offset-3 Table_res_SM">
+        <table class="">
+          <tr>
+            <td class="textAlignLeft">Amazon Gift Card
+            </td>
+            <td class="textAlignRight">$5,474,751</td></tr><tr>
+            <td class="textAlignLeft">eBay Gift Card
+            </td>
+            <td class="textAlignRight">$3,674,264</td></tr>
+            <tr>
+            <td class="textAlignLeft"> Steam Wallet  Gift Card
+            </td>
+            <td class="textAlignRight">$3,184,923</td></tr>
+            <tr>
+            <td class="textAlignLeft">iTunes Gift Card
+            </td>
+            <td class="textAlignRight">$1,686,216</td></tr>
+          
+        </table>
+        </div>
+        </div>
+
+<div class="col-lg-12">
+        <div class="tablebtn" fxLayoutAlign = "center center">
+          <button [ngClass]="{'active' : activeId === '1'}" (click)="btc('1')"  class="btn active"  checked> USD </button>
+          <button [ngClass]="{'active' : activeId === '2'}" (click)="BTC('2')" class="btn" > EUR </button>
+          <button [ngClass]="{'active' : activeId === '3'}" (click)="btc('3')"  class="btn" > NGN </button>
+          <button [ngClass]="{'active' : activeId === '4'}" (click)="BTC('4')" class="btn"> CNY </button>
+        </div>
+        
+            <table>
+        <!-- ADD HEADERS -->
+        <tr>
+
+            <th>Payment method name</th>
+            <th>Weekly volume</th>
+            <th>Avg profit</th>
+            <th>Avg value of the trade</th>
+            <th>Risk</th>
+        </tr>
+
+        <!-- BIND ARRAY TO TABLE -->
+        <tr *ngFor="let bird of arrBirds">
+            <td>{{bird.name}}</td>
+            <td>{{bird.username}}</td>
+            <td>{{bird.phone}}</td>
+            <td>{{bird.website}}</td>
+            <td>{{bird.email}}</td>
+        </tr>
+      </table>
+      </div>
+      </div>
+<!--     </div> -->
+  </div>
+</section>
+
+
+<div class="container-fluid">
+	<div class="row text-center" style="background-image: url('assets/images/bitcoin.jpeg');background-size: cover;">
+		<div class="col-lg-12" style="background-color: #E8E8E8;height: 750px;opacity: .9">
+			<div class="vendor-section2 text-center">
+				<h2>Get started now!</h2>
+				<p>Wanna know more how this works? Watch our step by step training series and you'll be on the road to having your own business.</p>
+			</div>
+      <div class="col-lg-12" fxLayoutAlign="center center">
+          <iframe src="//www.youtube.com/embed/yU0oG4TyMKo" height="500" width="700"></iframe>
+        </div>
+		</div>
+	</div>
+</div>
+
+<div class="divider divider-short divider-center"><i class="fa fa-circle"></i></div>
+
+<div class="center">
+            <a routerLink='/signin' id="footer-cta" class="button button-3d button-red button-xlarge nobottommargin">
+                Sign up as a vendor
+            </a>
+
+        </div>
+
+
+
+
+<div class="divider divider-short divider-center"><i class="fa fa-circle"></i></div>
+
+<app-footer></app-footer>

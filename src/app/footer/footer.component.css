@@ -1,0 +1,20 @@
+li{
+	/*display: inline;*/
+	text-align: center;
+}
+
+ul li{
+	list-style-type: none;
+}
+.footer-links{
+	margin-left: -38px;
+}
+label{
+	color: #bb87f1;
+}
+.social-links{
+	height: 30px;
+}
+.social-links li{
+	margin-left: 30px;
+}

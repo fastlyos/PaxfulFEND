@@ -1,0 +1,126 @@
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="modal-dialog PaymentMethodPickerModal__dialog" role="document">
+                    <div class="modal-content PaymentMethodPickerModal__content">
+                        <div class="Header__container">
+                            <div class="Header__searchContainer">
+                                <div class="Searchbar__container">
+                                    <div class="Searchbar__searchIcon"></div><input placeholder="Search" type="text" class="Searchbar__input form-control" value=""></div>
+                                <div class="CloseBtn__container">
+                                    <div class="CloseBtn__imgContainer"></div>
+                                </div>
+                            </div>
+                            <div class="Tabs__container">
+                                <div class="Tabs__tabs">
+                                    <div class="Tabs__inner">
+                                        <div class="TabsItem__item " href="#1" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '1'}" (click)="colorchange('1')"><img class="TabsItem__img" src="/assets/images/all-methods.svg" alt="All payment options" checked>
+                                            <div class="TabsItem__title">All payment options</div>
+                                            <div class="TabsItem__count">354 options</div>
+                                        </div>
+                                        <div class="TabsItem__item" href="#2" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '3'}" (click)="colorchange('3')"><img class="TabsItem__img" src="/assets/images/icon-bank-big.svg" alt="Bank transfers">
+                                            <div class="TabsItem__title">Bank transfers</div>
+                                            <div class="TabsItem__count">9 options</div>
+                                        </div>
+                                        <div class="TabsItem__item TabsItem__activeItem" href="#3" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '2'}" (click)="colorchange('2')"><img class="TabsItem__img" src="/assets/images/icon-online-big.svg" alt="Online wallets">
+                                            <div class="TabsItem__title">Online wallets</div>
+                                            <div class="TabsItem__count">131 options</div>
+                                        </div>
+                                        <div class="TabsItem__item" href="#4" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '4'}" (click)="colorchange('4')"><img class="TabsItem__img" src="/assets/images/icon-giftcard-big.svg" alt="Gift cards">
+                                            <div class="TabsItem__title">Gift cards</div>
+                                            <div class="TabsItem__count">113 options</div>
+                                        </div>
+                                        <div class="TabsItem__item" href="#5" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '5'}" (click)="colorchange('5')"><img class="TabsItem__img" src="/assets/images/icon-cash-big.svg" alt="Cash">
+                                            <div class="TabsItem__title">Cash</div>
+                                            <div class="TabsItem__count">55 options</div>
+                                        </div>
+                                        <div class="TabsItem__item" href="#6" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '6'}" (click)="colorchange('6')"><img class="TabsItem__img" src="https://paxful.com/assets/images/svg-icons/icon-card-big.svg" alt="Debit/credit cards">
+                                            <div class="TabsItem__title">Debit/credit cards</div>
+                                            <div class="TabsItem__count">20 options</div>
+                                        </div>
+                                        <div class="TabsItem__item" href="#7" data-toggle="tab" [ngClass]="{'TabsItem__activeItem' : activeId === '7'}" (click)="colorchange('7')"><img class="TabsItem__img" src="https://paxful.com/assets/images/svg-icons/icon-digital.svg" alt="Digital currencies">
+                                            <div class="TabsItem__title">Digital currencies</div>
+                                            <div class="TabsItem__count">26 options</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="TabsContent__container">
+                                <div class="TabDescription__container">
+                                    <div class="TabDescription__linkContainer"><a href="/buy-bitcoin?group=all-payment-methods" class="TabDescription__link">VIEW OFFERS FOR All payment options</a></div>
+                                </div>
+                                <div class="PopularPaymentMethods__container"><span class="PopularPaymentMethods__title">Popular payment options in India</span>
+                                    <div class="PopularPaymentMethods__list">
+                                        <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/bank-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">IMPS Transfer</span></div>
+                                        <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/bank-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="UPI Transfer">UPI Transfer</span></div>
+                                        <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/online-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="Paytm Online Wallet">Paytm Online Wallet</span></div>
+                                        <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/online-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="PhonePe">PhonePe</span></div>
+                                        <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/online-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="Bhim">Bhim</span></div>
+                                        <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/bank-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="Bank Transfer">Bank Transfer</span></div>
+                                    </div>
+                                </div>
+                                <div class="PaymentMethodsList__container"><span class="PaymentMethodsList__title">All payment options (354 options)</span>
+                                    <!-- <div class="PaymentMethodsList__list"> -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="7">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem" *ngFor="let showall of arrBirds">
+                                                    <img class="PaymentMethodItem__icon" src="assets/images/{{ showall.img }}.svg" alt="">
+                                                    <span class="PaymentMethodItem__name" title="IMPS Transfer">
+                             {{ showall.name }}
+                       </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="6">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem" *ngFor="let giftcard of GiftCard"><img class="PaymentMethodItem__icon" src="assets/images/{{ giftcard.img }}.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">{{ giftcard.name }}</span></div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="4">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem" *ngFor="let giftcard of GiftCard"><img class="PaymentMethodItem__icon" src="assets/images/{{ giftcard.img }}.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">{{ giftcard.name }}</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="5">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem" *ngFor="let onlineTransfer of onlineTransfer"><img class="PaymentMethodItem__icon" src="assets/images/{{ onlineTransfer.img }}.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">{{ onlineTransfer.name }}</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="3">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem" *ngFor="let onlineTransfer of onlineTransfer"><img class="PaymentMethodItem__icon" src="assets/images/{{ onlineTransfer.img }}.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">{{ onlineTransfer.name }}</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane active" id="1">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/bank-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">IMPS Transfer</span></div>
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/bank-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="UPI Transfer">UPI Transfer</span></div>
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/online-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="Paytm Online Wallet">Paytm Online Wallet</span></div>
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/online-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="PhonePe">PhonePe</span></div>
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/online-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="Bhim">Bhim</span></div>
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem"><img class="PaymentMethodItem__icon" src="assets/images/bank-transfers.svg" alt=""><span class="PaymentMethodItem__name" title="Bank Transfer">Bank Transfer</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="2">
+                                            <div class="PopularPaymentMethods__list">
+                                                <div class="PaymentMethodItem__item PopularPaymentMethods__popularItem" *ngFor="let BankTransfer of bank"><img class="PaymentMethodItem__icon" src="assets/images/{{ BankTransfer.img }}.svg" alt=""><span class="PaymentMethodItem__name" title="IMPS Transfer">{{ BankTransfer.name }}</span></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> -->

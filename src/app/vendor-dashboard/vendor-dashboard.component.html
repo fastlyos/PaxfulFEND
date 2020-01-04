@@ -1,0 +1,285 @@
+<app-navbar></app-navbar>
+<section class="BackGroundColor">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 VendorDashboard">
+        <h1>Vendor Dashboard</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="BackGroundColor" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-3 mt-4" style="margin-top: 30px;">
+        <ul class="nav nav-tabs mb-4">
+          <li class="active col-lg-6"><a href="#OverView" data-toggle="tab">Overview</a></li>
+          <li class="col-lg-6"><a href="#Detailed_Statistics" data-toggle="tab">Detailed statistics</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="BackGroundColor">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="tab-content">
+          <div class="tab-pane active" id="OverView">
+              <div class="active-trades-container--header">
+                  <h3 class="section-title">
+                      Active Trades
+                      <span class="count-of-table-elems">0</span>
+                  </h3>
+                  <span class="explanation">
+                  <i class="fa fa-refresh fa-spin" id="trade-loading-icon" style="display: none"></i>
+                  <span id="activeTradesUpdated">Updating active trades in 5 seconds</span>
+                  </span>
+              </div>
+              <div class="table-transactions table-responsive" id="active-trades-table">
+                <table class="table">
+                    <tbody>
+                        <tr class="noresult_VendorDashboard">
+                            <td><span class="lead">No active trades.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="verification-blocks">
+                    <div class="vendor_dashboard__verification_block feature-box fbox-center fadeIn animated not_verified" data-animate="fadeIn">
+                        <div class="vendor_dashboard__verification_icon pax2">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-box__text">
+                                                                            <h3 class="vendor_dashboard__verification_title pax2">Phone number not verified</h3>
+                                <p>Take a moment to confirm your phone number.</p>
+                                <a routerLink='/User/UserAccount' class="fbox-link">
+                                    Verify now
+                                </a>
+                                                                    </div>
+                    </div>
+                    <div class="vendor_dashboard__verification_block feature-box fbox-center fadeIn animated not_verified" data-animate="fadeIn">
+                        <div class="vendor_dashboard__verification_icon pax2">
+                           
+                                <i class="fa fa-shield" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-box__text">
+                                                                            <h3 class="vendor_dashboard__verification_title pax2">2FA not enabled</h3>
+                                <p>Enable two-factor authentication to secure your account.</p>
+                                <a routerLink='/User/UserAccount' class="fbox-link">
+                                    Setup 2FA now
+                                </a>
+                                                                    </div>
+                    </div>
+                </div>
+
+
+
+            <div class="offersTableWrapper">
+              <div id="offers" class="page-anchor"></div>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                      <div class="bondNoticeWrapper mt-4 mb-8">
+                          <i class="i-small icon-exclamation"></i>
+                          <strong>! Any gift card offers</strong> reFquire <a href="">bond</a> of 0.1 BTC.
+                          <span>
+                  <strong>Why </strong><i class="fa fa-question-circle-o" style="color: gray"></i>
+                  </span><br>
+                          <span>Balance of at least 0.1 BTC is required to transfer to bond</span>
+                      </div>
+                      <div>
+                          <h3 class="sectionTitle mb-3">
+                              My Offers
+                              <span class="count-of-table-elems">0</span>
+                          </h3>
+                          <div class="offersTable table-responsive mb-4">
+                              <div id="marginPopoverContainer"></div>
+                              <table class="table m-0">
+                                  <tbody>
+                                      <tr class="createOfferRow">
+                                          <td colspan="7" class="my-1 mx-2">
+                                              <a href="">
+                                      Create your offer
+                                  </a>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-12 col-sm-12">
+                <div class="team-box mt-30">
+                    <h3 class="sectionTitle">
+                        My Referral
+                    </h3>
+                    <p class="section-subtitle light">
+                        Share your Paxful referral link and earn <strong>50%</strong> from your team members' escrow fees and <strong>10%</strong> from theirs!
+                    </p>
+                    <div id="invite-to-team">
+                        <div class="link-input">
+                            <div class="input-group">
+                                <input id="team-referral-input" class="form-control input-lg" value="https://Osiz.com/?r=GMYyyxBnwYW" style="line-height: 1;font-size: 14px;">
+                                <span class="input-group-btn">
+                                                <button class="btn btn-default btn-clipboard btn-lg" type="button"
+                                                ngxClipboard [cbContent]="'https://Osiz_LBC.com/?=GMYyyxBnwYW'" (click)="copied()">Copy link</button>
+											</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 ">
+                          <div class="boxsmall">
+                            <h3>Referral</h3>
+                            <span class="numberbox pull-right" style="margin-top: -25px">0</span>
+                          </div> 
+                        </div>
+
+                        <div class="col-lg-4 ">
+                            <div class="boxsmall">
+                                <h3>Total earned</h3>
+                            <span class="numberbox pull-right" style="margin-top: -25px">
+                                0 <small>USD</small>
+                            </span>
+                        </div>
+                        </div>
+                        
+                        <div class="col-lg-4 ">
+                            <div class="boxsmall">
+                                    <h3>Current balance</h3>
+                                    <span class="numberbox pull-right" style="margin-top: -25px">
+                                        0 <small>USD</small>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 mt-4 mb-4">
+                            <div class="action-row pull-right">
+                                <a href="" class="button button-small button-border button-rounded norightmargin">More details</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+          <section class="py-6 mt-3 FeedbackForm">
+              <div class="container FeedbackContainer">
+                  <h2 class="mb-2">Got a feature in mind?</h2>
+                  <p class="mb-3 FeedbackForm__Subtitle">Tell us briefly about the feature you would like to see on Paxful.</p>
+                  <textarea name="text" class="form-control mb-3 FeedbackForm__textarea"
+                   rows="7"
+                   placeholder="Please keep it between 25 and 500 characters in length."
+                   [(ngModel)]="role"
+                   [maxlength]="maxChars"
+                   ></textarea>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                      <p class="mb-0 FeedbackForm__subtitle">Characters left: {{role.length}}/{{maxChars}}</p>
+                      <button type="submit" class="px-4 py-2 btn FeedbackForm__SendButton">Send</button>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </section>
+
+          </div>
+          <div class="tab-pane" id="Detailed_Statistics">
+            <section>
+                <div class="container">
+                    <div class="row mt-4">
+                        <div class="col-lg-6">
+                            <div class="detailed_statistics__block">
+                                <div class="detailed_statistics__block_header">
+                                    <h3 class="detailed_statistics__block_title">Top successful offers</h3>
+                                    <span class="detailed_statistics__block_subtitle">Best offers by closing ratio</span>
+                                </div>
+                                <div class="detailed_statistics__block_body">
+                                    <div class="text-lg topmargin-xs list-unstyled">
+                                        No successful sell trades yet.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="detailed_statistics__block">
+                                <div class="detailed_statistics__block_header">
+                                    <h3 class="detailed_statistics__block_title">Expired</h3>
+                                    <span class="detailed_statistics__block_subtitle">Most expired offers</span>
+                                </div>
+                                <div class="detailed_statistics__block_body">
+                                    <div class="text-lg topmargin-xs list-unstyled">
+                                            No expired offers yet.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="detailed_statistics__block">
+                                <div class="detailed_statistics__block_header">
+                                    <h3 class="detailed_statistics__block_title">Cancelled</h3>
+                                    <span class="detailed_statistics__block_subtitle">Most cancelled offers by buyers</span>
+                                </div>
+                                <div class="detailed_statistics__block_body">
+                                    <div class="text-lg topmargin-xs list-unstyled">
+                                     No cancelled trades with surveys yet.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="detailed_statistics__block">
+                                <div class="detailed_statistics__block_header">
+                                    <h3 class="detailed_statistics__block_title">Payment methods</h3>
+                                    <span class="detailed_statistics__block_subtitle">Payment methods</span>
+                                </div>
+                                <div class="detailed_statistics__block_body">
+                                    <div class="text-lg topmargin-xs list-unstyled">
+                                            No payment methods.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="detailed_statistics__block">
+                                <div class="detailed_statistics__block_header">
+                                    <h3 class="detailed_statistics__block_title">Last 5 completed trades</h3>
+                                    <!-- <span class="detailed_statistics__block_subtitle">Best offers by closing ratio</span> -->
+                                </div>
+                                <div class="detailed_statistics__block_body">
+                                    <div class="text-lg topmargin-xs list-unstyled">
+                                            No completed trades yet.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="detailed_statistics__block">
+                                <div class="detailed_statistics__block_header">
+                                    <h3 class="detailed_statistics__block_title">Recently trusted users</h3>
+                                    <!-- <span class="detailed_statistics__block_subtitle">Best offers by closing ratio</span> -->
+                                </div>
+                                <div class="detailed_statistics__block_body">
+                                    <div class="text-lg topmargin-xs list-unstyled">
+                                            You trust nobody.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

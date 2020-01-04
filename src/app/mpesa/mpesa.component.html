@@ -1,0 +1,77 @@
+
+    <div>
+        <div class="CurrencyAmountPicker__currencyAmountPicker">
+        <input class="CurrencyAmountPicker__currencyAmountPickerInput" placeholder="Any amount" type="text" value="" data-toggle="collapse" href="#collapseExample">
+        <button type="button" class="Button__button CurrencyAmountPicker__button btn btn-unstyled btn-lg">
+        <div class="d-flex align-items-center">Any currency
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="CurrencyAmountPicker__arrowIcon">
+        <polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        </button>
+        </div>
+        <div class="CurrencyAmountPicker__selectWrapper" id="collapseExample">
+            <div class="CurrencyAmountPicker__selectContainer">
+                <div class="CurrencyAmountPicker__singleSelectContainer css-2b097c-container">
+                    <div class="CurrencyAmountPicker__controlWrapper"><button type="button" class="CurrencyAmountPicker__backButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-toggle="collapse" href="#collapseExample" ><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                        <div class="CurrencyAmountPicker__control css-0 collapse">
+                            <div class=" css-1hwfws3">
+                                <div class="CurrencyAmountPicker__inputWrapper">
+                                    <div class="css-1g6gooi">
+                                        <div class="CurrencyAmountPicker__input" style="display: inline-block;"><input autocapitalize="none" autocomplete="off" autocorrect="off"  spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" value="" style="box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;">
+                                            <div style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: 14px; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: 400; font-style: normal; letter-spacing: normal; text-transform: none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" css-1wy0on6"><span class=" css-0"></span>
+                                <div aria-hidden="true" class=" css-1frir8c-indicatorContainer" id="collapseExample"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A9A9A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CurrencyAmountPicker__menuContainer CurrencyAmountPicker__withGradient css-0">
+                        <div class="CurrencyAmountPicker__menuList css-0">
+                            <div class="CurrencyAmountPicker__optionsWrapper CurrencyAmountPicker__popularCurrenciesWrapper">
+                                <div class=" css-0">
+                                    <div class="CurrencyAmountPicker__groupHeader">
+                                        <div class=" css-0">Most popular</div>
+                                    </div>
+                                    <div>
+                                        <div class="CurrencyAmountPicker__currencyOption CurrencyAmountPicker__selectedOption css-0">Any currency<span class="CurrencyAmountPicker__currencyAbbreviation">$£€</span></div>
+                                        <div class="CurrencyAmountPicker__currencyOption css-0">US Dollar<span class="CurrencyAmountPicker__currencyAbbreviation">USD</span></div>
+                                        <div class="CurrencyAmountPicker__currencyOption css-0">Euro<span class="CurrencyAmountPicker__currencyAbbreviation">EUR</span></div>
+                                        <div class="CurrencyAmountPicker__currencyOption css-0">British Pound<span class="CurrencyAmountPicker__currencyAbbreviation">GBP</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="CurrencyAmountPicker__optionsWrapper CurrencyAmountPicker__allCurrenciesWrapper"    *ngFor="let Currency of currency">
+                                <div class=" css-0">
+                                    <div class="CurrencyAmountPicker__groupHeader">
+                                        <div class=" css-0" id="react-select-2-group-1-heading"></div>
+                                    </div>
+                                    <div>
+                                        <div class="CurrencyAmountPicker__currencyOption css-0"> {{ Currency.Currency_Name }} <span class="CurrencyAmountPicker__currencyAbbreviation"> {{ Currency.Currency_Sym }} </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+
+
+<div class="dropdown">
+  <button (onclick)= "myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="#about">About</a>
+    <a href="#base">Base</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="#tools">Tools</a>
+  </div>
+</div> -->

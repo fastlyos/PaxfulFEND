@@ -1,0 +1,1241 @@
+<app-navbar>
+</app-navbar>
+
+<section class="BackGroundColor">
+    <div class="container">
+        <div class="row mt-4 mb-4">
+            <div class="col-lg-12">
+                <ul class="nav nav-tabs tabs-left mb-4">
+                    <li class="active col-lg-4"><a href="#home" data-toggle="tab">Profile</a></li>
+                    <li class="col-lg-4"><a href="#Security" data-toggle="tab">Security</a></li>
+                    <li class="col-lg-4"><a href="#Verification" data-toggle="tab">Verification</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="tab-content">
+            		<div class="tab-pane active outlineBorder" id="home">
+                        <form class="row nobottommargin">
+                            <h3 class="col-lg-12 title-block">Account settings
+                                <small class="js-fullstory-exclude">(balajiosiz@bnbrentalscript.com 
+                				<a id="btn-send-email-code" href="#">Resend code</a>)
+            					</small>
+                            </h3>
+                            <div class="col-lg-6 username-container">
+                                <span class="form-label">Username</span>
+                                <p class="username-static form-control-static nobottommargin">DarlingBalaji</p>
+                                <label for="phone">Phone</label>
+                            	<div class="iti iti--allow-dropdown">
+                               	 	<input class="sm-form-control js-fullstory-exclude" id="phone" placeholder="Enter your number" type="number" autocomplete="off">
+                           		</div>
+
+                                <div class="clearfix">
+                                    <span class="pull-left" style="font-size: 14px;">
+            							Please set your phone number with country code.
+             						   <strong>Must be a mobile number!</strong>
+            						</span>
+                                    <span class="pull-right">
+	              						<span class="send-sms-confirm-loading spinner" style="display: none;">
+	                 						<img alt="Send phone confirm activity indicator" src="/images/ajax-loader.gif">
+	             						</span>
+                                    </span>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="pull-right" style="font-size: 14px;">
+	                   					<a id="call-phone-code-btn" href="#">Call me</a> or
+	                 					<a id="send-phone-code-btn" href="#">Send code</a>
+              						</span>
+                                </div>
+                                <div class="phone-confirm-container topmargin-xs">
+                                    <div class="input-group divcenter clearfix">
+                                        <input type="text" id="phoneCode" class="formcontrol" placeholder="Enter confirmation code">
+                                        <span class="input-group-btn">
+                   						<button id="phone-code-submit-btn" class="btn button-red ladda-button" data-style="zoom-in" type="button">
+                       					<span class="ladda-label">Submit</span>
+                                        </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 text-center">
+                                <span class="form-label col-sm-12 row">Profile picture</span>
+                                <div class="profile-avatar-wrapper">
+                                    <div class="image-wrapper">
+                                        <img src="https://s3.amazonaws.com/paxful/avatar/2019/12/e6ca590c6cf707b6f3178c9e7b398ebd.jpg" id="avatar-image" class="js-fullstory-exclude" alt="DarlingBalaji" style="border-radius:50%;">
+                                    </div>
+                                    <div class="update-avatar avatarcont">
+                                        <button id="update-avatar-button" type="button" class="noleftmargin btn button-brown">
+                 						Update Profile Picture
+                						</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="divider"><i class="fa fa-circle"></i></div>
+                            <div class="clear"></div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="bio" class="control-label">Bio</label>
+                                    <textarea class="sm-form-control" id="bio" placeholder="Your bio appears on your public profile" rows="4" name="bio" cols="50"></textarea>
+                                    <span class="help-block">Maximum 3 lines and 180 characters</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="fiat_currency_id" class="control-label">Preferred currency</label>
+                                    <select class="sm-form-control" id="fiat_currency_id" name="fiat_currency_id">
+						            	<option value="174">Afghan Afghani</option>
+										<option value="4">Albanian Lek</option>
+										<option value="42">Algerian Dinar</option>
+										<option value="175">Angolan Kwanza</option>
+										<option value="7">Argentine Peso</option>
+										<option value="167">Armenian Dram</option>
+										<option value="10">Aruban Florin</option>
+										<option value="9">Australian Dollar</option>
+										<option value="176">Azerbaijan Manat</option>
+										<option value="21">Bahamian Dollar</option>
+										<option value="15">Bahraini Dinar</option>
+										<option value="12">Bangladeshi Taka</option>
+										<option value="11">Barbadian Dollar</option>
+										<option value="177">Belarusian Ruble</option>
+										<option value="25">Belize Dollar</option>
+										<option value="17">Bermudian Dollar</option>
+										<option value="22">Bhutanese Ngultrum</option>
+										<option value="19">Bolivian Boliviano</option>
+										<option value="168">Bosnia and Herzegovina Convertible Mark</option>
+										<option value="24">Botswana Pula</option>
+										<option value="20">Brazilian Real</option>
+										<option value="52">British Pound</option>
+										<option value="18">Brunei Dollar</option>
+										<option value="14">Bulgarian Lev</option>
+										<option value="16">Burundi Franc</option>
+										<option value="157">CFP Franc</option>
+										<option value="77">Cambodian Riel</option>
+										<option value="26">Canadian Dollar</option>
+										<option value="35">Cape Verdean Escudo</option>
+										<option value="82">Caymanian Dollar</option>
+										<option value="29">Chilean peso</option>
+										<option value="31">Colombian Peso</option>
+										<option value="155">Communauté Financière Africaine (BCEAO), Franc</option>
+										<option value="150">Communauté Financière Africaine (BEAC), CFA Franc BEAC</option>
+										<option value="78">Comorian Franc</option>
+										<option value="178">Congolese Franc</option>
+										<option value="32">Costa Rican Colon</option>
+										<option value="169">Croatian Kuna</option>
+										<option value="33">Czech Republic Koruna</option>
+										<option value="40">Danish Krone</option>
+										<option value="179">Djiboutian Franc</option>
+										<option value="41">Dominican Peso</option>
+										<option value="153">Eastern Caribbean dollar</option>
+										<option value="44">Egyptian Pound</option>
+										<option value="181">Eritrean Nakfa</option>
+										<option value="46">Ethiopian Birr</option>
+										<option value="47">Euro</option>
+										<option value="50">Falkland Islands Pound</option>
+										<option value="49">Fijian Dollar</option>
+										<option value="55">Gambian Dalasi</option>
+										<option value="182">Georgian Lari</option>
+										<option value="172">Ghanaian Cedi</option>
+										<option value="54">Gibraltar Pound</option>
+										<option value="152">Gold Ounce</option>
+										<option value="58">Guatemalan Quetzal</option>
+										<option value="183">Guernsey Pound</option>
+										<option value="56">Guinean Franc</option>
+										<option value="60">Guyanese Dollar</option>
+										<option value="63">Haitian Gourde</option>
+										<option value="62">Honduran Lempira</option>
+										<option value="61">Hong Kong Dollar</option>
+										<option value="64">Hungarian Forint</option>
+										<option value="185">Icelandic Krona</option>
+										<option value="68" selected="selected">Indian Rupee</option>
+										<option value="65">Indonesian Rupiah</option>
+										<option value="69">Iraqi Dinar</option>
+										<option value="67">Israeli Shekel</option>
+										<option value="73">Jamaican Dollar</option>
+										<option value="75">Japanese Yen</option>
+										<option value="186">Jersey Pound</option>
+										<option value="74">Jordanian Dinar</option>
+										<option value="173">Kazakhstani Tenge</option>
+										<option value="76">Kenyan Shilling</option>
+										<option value="81">Kuwaiti Dinar</option>
+										<option value="187">Kyrgyzstani Som</option>
+										<option value="83">Lao Kip</option>
+										<option value="84">Lebanese Pound</option>
+										<option value="87">Lesotho Loti</option>
+										<option value="86">Liberian Dollar</option>
+										<option value="89">Libyan Dinar</option>
+										<option value="93">Macanese Pataca</option>
+										<option value="190">Macedonian Denar</option>
+										<option value="189">Malagasy Ariary</option>
+										<option value="98">Malawian Kwacha</option>
+										<option value="100">Malaysian Ringgit</option>
+										<option value="97">Maldivian Rufiyaa</option>
+										<option value="184">Manx The Isle of Man Pound</option>
+										<option value="192">Mauritanian Ouguiya</option>
+										<option value="94">Mauritanian Ouguiya</option>
+										<option value="96">Mauritian Rupee</option>
+										<option value="99">Mexican Peso</option>
+										<option value="188">Moldovan Leu</option>
+										<option value="92">Mongolian Tugrik</option>
+										<option value="90">Moroccan Dirham</option>
+										<option value="193">Mozambique Metical</option>
+										<option value="191">Myanmar Kyat</option>
+										<option value="102">Namibian Dollar</option>
+										<option value="106">Nepalese Rupee</option>
+										<option value="5">Netherlands Antillean Guilder</option>
+										<option value="107">New Zealand Dollar</option>
+										<option value="104">Nicaraguan Córdoba</option>
+										<option value="103">Nigerian Naira</option>
+										<option value="105">Norwegian Kroner</option>
+										<option value="108">Omani Rial</option>
+										<option value="113">Pakistan Rupee</option>
+										<option value="156">Palladium Ounce</option>
+										<option value="109">Panamanian Balboa</option>
+										<option value="111">Papua New Guinean Kina</option>
+										<option value="116">Paraguay Guarani</option>
+										<option value="110">Peruvian Sol</option>
+										<option value="112">Philippine Peso</option>
+										<option value="158">Platinum Ounce</option>
+										<option value="114">Polish Zloty</option>
+										<option value="117">Qatari Rial</option>
+										<option value="118">Romanian Leu</option>
+										<option value="131">Russian Ruble</option>
+										<option value="119">Rwandan Franc</option>
+										<option value="132">Salvadoran Colon</option>
+										<option value="149">Samoan Tala</option>
+										<option value="130">Sao Tome and Principe Dobra</option>
+										<option value="197">Sao Tome and Principe Dobra</option>
+										<option value="120">Saudi Arabian Riyal</option>
+										<option value="161">Serbian Dinar</option>
+										<option value="122">Seychelles Rupee</option>
+										<option value="127">Sierra Leone Leone</option>
+										<option value="151">Silver Ounce</option>
+										<option value="125">Singapore Dollar</option>
+										<option value="121">Solomon Islands Dollar</option>
+										<option value="128">Somali Shilling</option>
+										<option value="162">South African Rand</option>
+										<option value="80">South Korean Won</option>
+										<option value="196">South Sudanese Pound</option>
+										<option value="85">Sri Lanka Rupee</option>
+										<option value="126">St. Helena Pound</option>
+										<option value="195">Surinamese Dollar</option>
+										<option value="134">Swazi Lilangeni</option>
+										<option value="124">Swedish Krona</option>
+										<option value="27">Swiss Franc</option>
+										<option value="141">Taiwan Dollar</option>
+										<option value="198">Tajikistani Somoni</option>
+										<option value="142">Tanzanian Shilling</option>
+										<option value="135">Thai Baht</option>
+										<option value="137">Tongan Pa'anga</option>
+										<option value="140">Trinidad and Tobago Dollar</option>
+										<option value="136">Tunisian Dinar</option>
+										<option value="139">Turkish Lira</option>
+										<option value="199">Turkmenistan Manat</option>
+										<option value="144">US Dollar</option>
+										<option value="143">Uganda Shilling</option>
+										<option value="200">Ukrainian Hryvnia</option>
+										<option value="28">Unidad de Fomento</option>
+										<option value="2">United Arab Emirates Dirham</option>
+										<option value="145">Uruguayan Peso</option>
+										<option value="201">Uzbekistani Som</option>
+										<option value="148">Vanuatu Vatu</option>
+										<option value="171">Venezuelan bolivar soberano</option>
+										<option value="147">Vietnamese Dong</option>
+										<option value="160">Yemeni Rial</option>
+										<option value="30">Yuan (Chinese) Renminbi</option>
+										<option value="202">Zambian Kwacha</option>
+										<option value="203">Zimbabwean Dollar</option>
+									</select>
+                                    <span class="help-block">Select which currency your wallet will use</span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="divider"><i class="fa fa-circle"></i></div>
+                            <div class="clear"></div>
+                            <div class="user_notifications_settings">
+                                <div class="row user_notifications_settings__row_header">
+                                    <div class="col-sm-6 col-sm-offset-6">
+                                        <div class="row">
+                                            <div class="text-center col-xs-4 user_notifications_settings__header">
+                                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                                <div class="user_notifications_settings__header_title">
+                                                	<span>Notification</span>
+                                           		</div>
+                                        	</div>
+                                            <div class="text-center col-xs-4 user_notifications_settings__header">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                <div class="user_notifications_settings__header_title"><span>Email</span></div>
+                                            </div>
+                                            <div class="text-center col-xs-4 user_notifications_settings__header">
+                                                <i class="fa fa-mobile" aria-hidden="true" style="font-size: 20px;"></i>
+                                                <div class="user_notifications_settings__header_title"><span>SMS</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="user_notifications_settings__rows_container">
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Someone viewed my profile
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_profile_viewed">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_profile_viewed">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Someone viewed my offer
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_offer_viewed" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_offer_viewed" checked="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Bitcoin deposit pending
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_bitcoins_incoming">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_bitcoins_incoming">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Bitcoin deposit confirmed
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_bitcoins_confirmed" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_bitcoins_confirmed" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_sms_bitcoins_confirmed">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Incoming trade
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_incoming_trade" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_incoming_trade" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_sms_incoming_trade" checked="">
+                                                    <i class="c-icon c-icon-question-circle" data-toggle="tooltip" title="" data-original-title="You will only get an sms if you're not active for 30s"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Partner paid for trade
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_partner_paid" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_partner_paid" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_sms_partner_paid">
+                                                    <i class="c-icon c-icon-question-circle" data-toggle="tooltip" title="" data-original-title="You will only get an sms if you're not active for 30s"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Trade cancelled/expired
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_trade_cancelled" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_trade_cancelled" checked="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Bitcoin sold
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_bitcoins_sold" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_bitcoins_sold" checked="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="col-sm-6 user_notifications_settings__option_name">
+                                            Bitcoin purchased
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_bitcoins_purchased" checked="">
+                                                </div>
+                                                <div class="text-center col-xs-4">
+                                                    <input type="checkbox" name="notify_email_bitcoins_purchased" checked="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="user_notifications_settings__row_container">
+                                            <span class="help-block">When to send another <strong>notification email</strong> on new trade message from last message received (good to avoid your inbox spam). Put <strong>0</strong> to receive email for every new message.</span>
+                                            <div class="col-sm-3 input-group">
+                                                <input type="text" value="10" name="notify_email_trade_messages_interval" id="notify_email_trade_messages_interval" class="formcontrol" aria-describedby="minutes-addon">
+                                                <span class="input-group-addon" id="minutes-addon">minutes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="form-check">
+                                            <label for="notify_not_email_messages"><input type="checkbox" name="notify_not_email_messages" id="notify_not_email_messages">Don't receive any email notifications of new trade messages or attachments</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="form-check">
+                                            <label for="sound_notifications"><input type="checkbox" name="sound_notifications" id="sound_notifications" checked="">Play sound notifications on new messages and new incoming trade</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user_notifications_settings__row">
+                                        <div class="form-check">
+                                            <label for="email_subscribed"><input type="checkbox" name="email_subscribed" id="email_subscribed" checked="">Receive occasionally important emails from us</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="divider"><i class="fa fa-circle"></i></div>
+                            <div class="clear"></div>
+                            <div class="col-lg-6">
+                                <label for="timezone">Timezone</label>
+	                                <select id="timezone" class="sm-form-control select2" name="timezone">
+								        <option value="Pacific/Midway">(GMT-11:00) Pacific, Midway - 2:24 AM</option>
+										<option value="Pacific/Niue">(GMT-11:00) Pacific, Niue - 2:24 AM</option>
+										<option value="Pacific/Pago_Pago">(GMT-11:00) Pacific, Pago Pago - 2:24 AM</option>
+										<option value="America/Adak">(GMT-10:00) America, Adak - 3:24 AM</option>
+										<option value="Pacific/Honolulu">(GMT-10:00) Pacific, Honolulu - 3:24 AM</option>
+										<option value="Pacific/Rarotonga">(GMT-10:00) Pacific, Rarotonga - 3:24 AM</option>
+										<option value="Pacific/Tahiti">(GMT-10:00) Pacific, Tahiti - 3:24 AM</option>
+										<option value="Pacific/Marquesas">(GMT-09:30) Pacific, Marquesas - 3:54 AM</option>
+										<option value="America/Anchorage">(GMT-09:00) America, Anchorage - 4:24 AM</option>
+										<option value="America/Juneau">(GMT-09:00) America, Juneau - 4:24 AM</option>
+										<option value="America/Metlakatla">(GMT-09:00) America, Metlakatla - 4:24 AM</option>
+										<option value="America/Nome">(GMT-09:00) America, Nome - 4:24 AM</option>
+										<option value="America/Sitka">(GMT-09:00) America, Sitka - 4:24 AM</option>
+										<option value="America/Yakutat">(GMT-09:00) America, Yakutat - 4:24 AM</option>
+										<option value="Pacific/Gambier">(GMT-09:00) Pacific, Gambier - 4:24 AM</option>
+										<option value="America/Dawson">(GMT-08:00) America, Dawson - 5:24 AM</option>
+										<option value="America/Los_Angeles">(GMT-08:00) America, Los Angeles - 5:24 AM</option>
+										<option value="America/Tijuana">(GMT-08:00) America, Tijuana - 5:24 AM</option>
+										<option value="America/Vancouver">(GMT-08:00) America, Vancouver - 5:24 AM</option>
+										<option value="America/Whitehorse">(GMT-08:00) America, Whitehorse - 5:24 AM</option>
+										<option value="Pacific/Pitcairn">(GMT-08:00) Pacific, Pitcairn - 5:24 AM</option>
+										<option value="America/Boise">(GMT-07:00) America, Boise - 6:24 AM</option>
+										<option value="America/Cambridge_Bay">(GMT-07:00) America, Cambridge Bay - 6:24 AM</option>
+										<option value="America/Chihuahua">(GMT-07:00) America, Chihuahua - 6:24 AM</option>
+										<option value="America/Creston">(GMT-07:00) America, Creston - 6:24 AM</option>
+										<option value="America/Dawson_Creek">(GMT-07:00) America, Dawson Creek - 6:24 AM</option>
+										<option value="America/Denver">(GMT-07:00) America, Denver - 6:24 AM</option>
+										<option value="America/Edmonton">(GMT-07:00) America, Edmonton - 6:24 AM</option>
+										<option value="America/Fort_Nelson">(GMT-07:00) America, Fort Nelson - 6:24 AM</option>
+										<option value="America/Hermosillo">(GMT-07:00) America, Hermosillo - 6:24 AM</option>
+										<option value="America/Inuvik">(GMT-07:00) America, Inuvik - 6:24 AM</option>
+										<option value="America/Mazatlan">(GMT-07:00) America, Mazatlan - 6:24 AM</option>
+										<option value="America/Ojinaga">(GMT-07:00) America, Ojinaga - 6:24 AM</option>
+										<option value="America/Phoenix">(GMT-07:00) America, Phoenix - 6:24 AM</option>
+										<option value="America/Yellowknife">(GMT-07:00) America, Yellowknife - 6:24 AM</option>
+										<option value="America/Bahia_Banderas">(GMT-06:00) America, Bahia Banderas - 7:24 AM</option>
+										<option value="America/Belize">(GMT-06:00) America, Belize - 7:24 AM</option>
+										<option value="America/Chicago">(GMT-06:00) America, Chicago - 7:24 AM</option>
+										<option value="America/Costa_Rica">(GMT-06:00) America, Costa Rica - 7:24 AM</option>
+										<option value="America/El_Salvador">(GMT-06:00) America, El Salvador - 7:24 AM</option>
+										<option value="America/Guatemala">(GMT-06:00) America, Guatemala - 7:24 AM</option>
+										<option value="America/Indiana/Knox">(GMT-06:00) America, Indiana, Knox - 7:24 AM</option>
+										<option value="America/Indiana/Tell_City">(GMT-06:00) America, Indiana, Tell City - 7:24 AM</option>
+										<option value="America/Managua">(GMT-06:00) America, Managua - 7:24 AM</option>
+										<option value="America/Matamoros">(GMT-06:00) America, Matamoros - 7:24 AM</option>
+										<option value="America/Menominee">(GMT-06:00) America, Menominee - 7:24 AM</option>
+										<option value="America/Merida">(GMT-06:00) America, Merida - 7:24 AM</option>
+										<option value="America/Mexico_City">(GMT-06:00) America, Mexico City - 7:24 AM</option>
+										<option value="America/Monterrey">(GMT-06:00) America, Monterrey - 7:24 AM</option>
+										<option value="America/North_Dakota/Beulah">(GMT-06:00) America, North Dakota, Beulah - 7:24 AM</option>
+										<option value="America/North_Dakota/Center">(GMT-06:00) America, North Dakota, Center - 7:24 AM</option>
+										<option value="America/North_Dakota/New_Salem">(GMT-06:00) America, North Dakota, New Salem - 7:24 AM</option>
+										<option value="America/Rainy_River">(GMT-06:00) America, Rainy River - 7:24 AM</option>
+										<option value="America/Rankin_Inlet">(GMT-06:00) America, Rankin Inlet - 7:24 AM</option>
+										<option value="America/Regina">(GMT-06:00) America, Regina - 7:24 AM</option>
+										<option value="America/Resolute">(GMT-06:00) America, Resolute - 7:24 AM</option>
+										<option value="America/Swift_Current">(GMT-06:00) America, Swift Current - 7:24 AM</option>
+										<option value="America/Tegucigalpa">(GMT-06:00) America, Tegucigalpa - 7:24 AM</option>
+										<option value="America/Winnipeg">(GMT-06:00) America, Winnipeg - 7:24 AM</option>
+										<option value="Pacific/Galapagos">(GMT-06:00) Pacific, Galapagos - 7:24 AM</option>
+										<option value="America/Atikokan">(GMT-05:00) America, Atikokan - 8:24 AM</option>
+										<option value="America/Bogota">(GMT-05:00) America, Bogota - 8:24 AM</option>
+										<option value="America/Cancun">(GMT-05:00) America, Cancun - 8:24 AM</option>
+										<option value="America/Cayman">(GMT-05:00) America, Cayman - 8:24 AM</option>
+										<option value="America/Detroit">(GMT-05:00) America, Detroit - 8:24 AM</option>
+										<option value="America/Eirunepe">(GMT-05:00) America, Eirunepe - 8:24 AM</option>
+										<option value="America/Grand_Turk">(GMT-05:00) America, Grand Turk - 8:24 AM</option>
+										<option value="America/Guayaquil">(GMT-05:00) America, Guayaquil - 8:24 AM</option>
+										<option value="America/Havana">(GMT-05:00) America, Havana - 8:24 AM</option>
+										<option value="America/Indiana/Indianapolis">(GMT-05:00) America, Indiana, Indianapolis - 8:24 AM</option>
+										<option value="America/Indiana/Marengo">(GMT-05:00) America, Indiana, Marengo - 8:24 AM</option>
+										<option value="America/Indiana/Petersburg">(GMT-05:00) America, Indiana, Petersburg - 8:24 AM</option>
+										<option value="America/Indiana/Vevay">(GMT-05:00) America, Indiana, Vevay - 8:24 AM</option>
+										<option value="America/Indiana/Vincennes">(GMT-05:00) America, Indiana, Vincennes - 8:24 AM</option>
+										<option value="America/Indiana/Winamac">(GMT-05:00) America, Indiana, Winamac - 8:24 AM</option>
+										<option value="America/Iqaluit">(GMT-05:00) America, Iqaluit - 8:24 AM</option>
+										<option value="America/Jamaica">(GMT-05:00) America, Jamaica - 8:24 AM</option>
+										<option value="America/Kentucky/Louisville">(GMT-05:00) America, Kentucky, Louisville - 8:24 AM</option>
+										<option value="America/Kentucky/Monticello">(GMT-05:00) America, Kentucky, Monticello - 8:24 AM</option>
+										<option value="America/Lima">(GMT-05:00) America, Lima - 8:24 AM</option>
+										<option value="America/Nassau">(GMT-05:00) America, Nassau - 8:24 AM</option>
+										<option value="America/New_York" selected="selected">(GMT-05:00) America, New York - 8:24 AM</option>
+										<option value="America/Nipigon">(GMT-05:00) America, Nipigon - 8:24 AM</option>
+										<option value="America/Panama">(GMT-05:00) America, Panama - 8:24 AM</option>
+										<option value="America/Pangnirtung">(GMT-05:00) America, Pangnirtung - 8:24 AM</option>
+										<option value="America/Port-au-Prince">(GMT-05:00) America, Port-au-Prince - 8:24 AM</option>
+										<option value="America/Rio_Branco">(GMT-05:00) America, Rio Branco - 8:24 AM</option>
+										<option value="America/Thunder_Bay">(GMT-05:00) America, Thunder Bay - 8:24 AM</option>
+										<option value="America/Toronto">(GMT-05:00) America, Toronto - 8:24 AM</option>
+										<option value="Pacific/Easter">(GMT-05:00) Pacific, Easter - 8:24 AM</option>
+										<option value="America/Anguilla">(GMT-04:00) America, Anguilla - 9:24 AM</option>
+										<option value="America/Antigua">(GMT-04:00) America, Antigua - 9:24 AM</option>
+										<option value="America/Aruba">(GMT-04:00) America, Aruba - 9:24 AM</option>
+										<option value="America/Barbados">(GMT-04:00) America, Barbados - 9:24 AM</option>
+										<option value="America/Blanc-Sablon">(GMT-04:00) America, Blanc-Sablon - 9:24 AM</option>
+										<option value="America/Boa_Vista">(GMT-04:00) America, Boa Vista - 9:24 AM</option>
+										<option value="America/Campo_Grande">(GMT-04:00) America, Campo Grande - 10:24 AM</option>
+										<option value="America/Caracas">(GMT-04:00) America, Caracas - 9:24 AM</option>
+										<option value="America/Cuiaba">(GMT-04:00) America, Cuiaba - 10:24 AM</option>
+										<option value="America/Curacao">(GMT-04:00) America, Curacao - 9:24 AM</option>
+										<option value="America/Dominica">(GMT-04:00) America, Dominica - 9:24 AM</option>
+										<option value="America/Glace_Bay">(GMT-04:00) America, Glace Bay - 9:24 AM</option>
+										<option value="America/Goose_Bay">(GMT-04:00) America, Goose Bay - 9:24 AM</option>
+										<option value="America/Grenada">(GMT-04:00) America, Grenada - 9:24 AM</option>
+										<option value="America/Guadeloupe">(GMT-04:00) America, Guadeloupe - 9:24 AM</option>
+										<option value="America/Guyana">(GMT-04:00) America, Guyana - 9:24 AM</option>
+										<option value="America/Halifax">(GMT-04:00) America, Halifax - 9:24 AM</option>
+										<option value="America/Kralendijk">(GMT-04:00) America, Kralendijk - 9:24 AM</option>
+										<option value="America/La_Paz">(GMT-04:00) America, La Paz - 9:24 AM</option>
+										<option value="America/Lower_Princes">(GMT-04:00) America, Lower Princes - 9:24 AM</option>
+										<option value="America/Manaus">(GMT-04:00) America, Manaus - 9:24 AM</option>
+										<option value="America/Marigot">(GMT-04:00) America, Marigot - 9:24 AM</option>
+										<option value="America/Martinique">(GMT-04:00) America, Martinique - 9:24 AM</option>
+										<option value="America/Moncton">(GMT-04:00) America, Moncton - 9:24 AM</option>
+										<option value="America/Montserrat">(GMT-04:00) America, Montserrat - 9:24 AM</option>
+										<option value="America/Port_of_Spain">(GMT-04:00) America, Port of Spain - 9:24 AM</option>
+										<option value="America/Porto_Velho">(GMT-04:00) America, Porto Velho - 9:24 AM</option>
+										<option value="America/Puerto_Rico">(GMT-04:00) America, Puerto Rico - 9:24 AM</option>
+										<option value="America/Santo_Domingo">(GMT-04:00) America, Santo Domingo - 9:24 AM</option>
+										<option value="America/St_Barthelemy">(GMT-04:00) America, St. Barthelemy - 9:24 AM</option>
+										<option value="America/St_Kitts">(GMT-04:00) America, St. Kitts - 9:24 AM</option>
+										<option value="America/St_Lucia">(GMT-04:00) America, St. Lucia - 9:24 AM</option>
+										<option value="America/St_Thomas">(GMT-04:00) America, St. Thomas - 9:24 AM</option>
+										<option value="America/St_Vincent">(GMT-04:00) America, St. Vincent - 9:24 AM</option>
+										<option value="America/Thule">(GMT-04:00) America, Thule - 9:24 AM</option>
+										<option value="America/Tortola">(GMT-04:00) America, Tortola - 9:24 AM</option>
+										<option value="Atlantic/Bermuda">(GMT-04:00) Atlantic, Bermuda - 9:24 AM</option>
+										<option value="America/St_Johns">(GMT-03:30) America, St. Johns - 9:54 AM</option>
+										<option value="America/Araguaina">(GMT-03:00) America, Araguaina - 10:24 AM</option>
+										<option value="America/Argentina/Buenos_Aires">(GMT-03:00) America, Argentina, Buenos Aires - 10:24 AM</option>
+										<option value="America/Argentina/Catamarca">(GMT-03:00) America, Argentina, Catamarca - 10:24 AM</option>
+										<option value="America/Argentina/Cordoba">(GMT-03:00) America, Argentina, Cordoba - 10:24 AM</option>
+										<option value="America/Argentina/Jujuy">(GMT-03:00) America, Argentina, Jujuy - 10:24 AM</option>
+										<option value="America/Argentina/La_Rioja">(GMT-03:00) America, Argentina, La Rioja - 10:24 AM</option>
+										<option value="America/Argentina/Mendoza">(GMT-03:00) America, Argentina, Mendoza - 10:24 AM</option>
+										<option value="America/Argentina/Rio_Gallegos">(GMT-03:00) America, Argentina, Rio Gallegos - 10:24 AM</option>
+										<option value="America/Argentina/Salta">(GMT-03:00) America, Argentina, Salta - 10:24 AM</option>
+										<option value="America/Argentina/San_Juan">(GMT-03:00) America, Argentina, San Juan - 10:24 AM</option>
+										<option value="America/Argentina/San_Luis">(GMT-03:00) America, Argentina, San Luis - 10:24 AM</option>
+										<option value="America/Argentina/Tucuman">(GMT-03:00) America, Argentina, Tucuman - 10:24 AM</option>
+										<option value="America/Argentina/Ushuaia">(GMT-03:00) America, Argentina, Ushuaia - 10:24 AM</option>
+										<option value="America/Asuncion">(GMT-03:00) America, Asuncion - 10:24 AM</option>
+										<option value="America/Bahia">(GMT-03:00) America, Bahia - 10:24 AM</option>
+										<option value="America/Belem">(GMT-03:00) America, Belem - 10:24 AM</option>
+										<option value="America/Cayenne">(GMT-03:00) America, Cayenne - 10:24 AM</option>
+										<option value="America/Fortaleza">(GMT-03:00) America, Fortaleza - 10:24 AM</option>
+										<option value="America/Godthab">(GMT-03:00) America, Godthab - 10:24 AM</option>
+										<option value="America/Maceio">(GMT-03:00) America, Maceio - 10:24 AM</option>
+										<option value="America/Miquelon">(GMT-03:00) America, Miquelon - 10:24 AM</option>
+										<option value="America/Montevideo">(GMT-03:00) America, Montevideo - 10:24 AM</option>
+										<option value="America/Paramaribo">(GMT-03:00) America, Paramaribo - 10:24 AM</option>
+										<option value="America/Punta_Arenas">(GMT-03:00) America, Punta Arenas - 10:24 AM</option>
+										<option value="America/Recife">(GMT-03:00) America, Recife - 10:24 AM</option>
+										<option value="America/Santarem">(GMT-03:00) America, Santarem - 10:24 AM</option>
+										<option value="America/Santiago">(GMT-03:00) America, Santiago - 10:24 AM</option>
+										<option value="America/Sao_Paulo">(GMT-03:00) America, Sao Paulo - 11:24 AM</option>
+										<option value="Antarctica/Palmer">(GMT-03:00) Antarctica, Palmer - 10:24 AM</option>
+										<option value="Antarctica/Rothera">(GMT-03:00) Antarctica, Rothera - 10:24 AM</option>
+										<option value="Atlantic/Stanley">(GMT-03:00) Atlantic, Stanley - 10:24 AM</option>
+										<option value="America/Noronha">(GMT-02:00) America, Noronha - 11:24 AM</option>
+										<option value="Atlantic/South_Georgia">(GMT-02:00) Atlantic, South Georgia - 11:24 AM</option>
+										<option value="America/Scoresbysund">(GMT-01:00) America, Scoresbysund - 12:24 PM</option>
+										<option value="Atlantic/Azores">(GMT-01:00) Atlantic, Azores - 12:24 PM</option>
+										<option value="Atlantic/Cape_Verde">(GMT-01:00) Atlantic, Cape Verde - 12:24 PM</option>
+										<option value="Africa/Abidjan">(GMT) Africa, Abidjan - 1:24 PM</option>
+										<option value="Africa/Accra">(GMT) Africa, Accra - 1:24 PM</option>
+										<option value="Africa/Bamako">(GMT) Africa, Bamako - 1:24 PM</option>
+										<option value="Africa/Banjul">(GMT) Africa, Banjul - 1:24 PM</option>
+										<option value="Africa/Bissau">(GMT) Africa, Bissau - 1:24 PM</option>
+										<option value="Africa/Conakry">(GMT) Africa, Conakry - 1:24 PM</option>
+										<option value="Africa/Dakar">(GMT) Africa, Dakar - 1:24 PM</option>
+										<option value="Africa/Freetown">(GMT) Africa, Freetown - 1:24 PM</option>
+										<option value="Africa/Lome">(GMT) Africa, Lome - 1:24 PM</option>
+										<option value="Africa/Monrovia">(GMT) Africa, Monrovia - 1:24 PM</option>
+										<option value="Africa/Nouakchott">(GMT) Africa, Nouakchott - 1:24 PM</option>
+										<option value="Africa/Ouagadougou">(GMT) Africa, Ouagadougou - 1:24 PM</option>
+										<option value="Africa/Sao_Tome">(GMT) Africa, Sao Tome - 2:24 PM</option>
+										<option value="America/Danmarkshavn">(GMT) America, Danmarkshavn - 1:24 PM</option>
+										<option value="Antarctica/Troll">(GMT) Antarctica, Troll - 1:24 PM</option>
+										<option value="Atlantic/Canary">(GMT) Atlantic, Canary - 1:24 PM</option>
+										<option value="Atlantic/Faroe">(GMT) Atlantic, Faroe - 1:24 PM</option>
+										<option value="Atlantic/Madeira">(GMT) Atlantic, Madeira - 1:24 PM</option>
+										<option value="Atlantic/Reykjavik">(GMT) Atlantic, Reykjavik - 1:24 PM</option>
+										<option value="Atlantic/St_Helena">(GMT) Atlantic, St. Helena - 1:24 PM</option>
+										<option value="Europe/Dublin">(GMT) Europe, Dublin - 1:24 PM</option>
+										<option value="Europe/Guernsey">(GMT) Europe, Guernsey - 1:24 PM</option>
+										<option value="Europe/Isle_of_Man">(GMT) Europe, Isle of Man - 1:24 PM</option>
+										<option value="Europe/Jersey">(GMT) Europe, Jersey - 1:24 PM</option>
+										<option value="Europe/Lisbon">(GMT) Europe, Lisbon - 1:24 PM</option>
+										<option value="Europe/London">(GMT) Europe, London - 1:24 PM</option>
+										<option value="UTC">(GMT) UTC - 1:24 PM</option>
+										<option value="Africa/Algiers">(GMT+01:00) Africa, Algiers - 2:24 PM</option>
+										<option value="Africa/Bangui">(GMT+01:00) Africa, Bangui - 2:24 PM</option>
+										<option value="Africa/Brazzaville">(GMT+01:00) Africa, Brazzaville - 2:24 PM</option>
+										<option value="Africa/Casablanca">(GMT+01:00) Africa, Casablanca - 1:24 PM</option>
+										<option value="Africa/Ceuta">(GMT+01:00) Africa, Ceuta - 2:24 PM</option>
+										<option value="Africa/Douala">(GMT+01:00) Africa, Douala - 2:24 PM</option>
+										<option value="Africa/El_Aaiun">(GMT+01:00) Africa, El Aaiun - 1:24 PM</option>
+										<option value="Africa/Kinshasa">(GMT+01:00) Africa, Kinshasa - 2:24 PM</option>
+										<option value="Africa/Lagos">(GMT+01:00) Africa, Lagos - 2:24 PM</option>
+										<option value="Africa/Libreville">(GMT+01:00) Africa, Libreville - 2:24 PM</option>
+										<option value="Africa/Luanda">(GMT+01:00) Africa, Luanda - 2:24 PM</option>
+										<option value="Africa/Malabo">(GMT+01:00) Africa, Malabo - 2:24 PM</option>
+										<option value="Africa/Ndjamena">(GMT+01:00) Africa, Ndjamena - 2:24 PM</option>
+										<option value="Africa/Niamey">(GMT+01:00) Africa, Niamey - 2:24 PM</option>
+										<option value="Africa/Porto-Novo">(GMT+01:00) Africa, Porto-Novo - 2:24 PM</option>
+										<option value="Africa/Tunis">(GMT+01:00) Africa, Tunis - 2:24 PM</option>
+										<option value="Arctic/Longyearbyen">(GMT+01:00) Arctic, Longyearbyen - 2:24 PM</option>
+										<option value="Europe/Amsterdam">(GMT+01:00) Europe, Amsterdam - 2:24 PM</option>
+										<option value="Europe/Andorra">(GMT+01:00) Europe, Andorra - 2:24 PM</option>
+										<option value="Europe/Belgrade">(GMT+01:00) Europe, Belgrade - 2:24 PM</option>
+										<option value="Europe/Berlin">(GMT+01:00) Europe, Berlin - 2:24 PM</option>
+										<option value="Europe/Bratislava">(GMT+01:00) Europe, Bratislava - 2:24 PM</option>
+										<option value="Europe/Brussels">(GMT+01:00) Europe, Brussels - 2:24 PM</option>
+										<option value="Europe/Budapest">(GMT+01:00) Europe, Budapest - 2:24 PM</option>
+										<option value="Europe/Busingen">(GMT+01:00) Europe, Busingen - 2:24 PM</option>
+										<option value="Europe/Copenhagen">(GMT+01:00) Europe, Copenhagen - 2:24 PM</option>
+										<option value="Europe/Gibraltar">(GMT+01:00) Europe, Gibraltar - 2:24 PM</option>
+										<option value="Europe/Ljubljana">(GMT+01:00) Europe, Ljubljana - 2:24 PM</option>
+										<option value="Europe/Luxembourg">(GMT+01:00) Europe, Luxembourg - 2:24 PM</option>
+										<option value="Europe/Madrid">(GMT+01:00) Europe, Madrid - 2:24 PM</option>
+										<option value="Europe/Malta">(GMT+01:00) Europe, Malta - 2:24 PM</option>
+										<option value="Europe/Monaco">(GMT+01:00) Europe, Monaco - 2:24 PM</option>
+										<option value="Europe/Oslo">(GMT+01:00) Europe, Oslo - 2:24 PM</option>
+										<option value="Europe/Paris">(GMT+01:00) Europe, Paris - 2:24 PM</option>
+										<option value="Europe/Podgorica">(GMT+01:00) Europe, Podgorica - 2:24 PM</option>
+										<option value="Europe/Prague">(GMT+01:00) Europe, Prague - 2:24 PM</option>
+										<option value="Europe/Rome">(GMT+01:00) Europe, Rome - 2:24 PM</option>
+										<option value="Europe/San_Marino">(GMT+01:00) Europe, San Marino - 2:24 PM</option>
+										<option value="Europe/Sarajevo">(GMT+01:00) Europe, Sarajevo - 2:24 PM</option>
+										<option value="Europe/Skopje">(GMT+01:00) Europe, Skopje - 2:24 PM</option>
+										<option value="Europe/Stockholm">(GMT+01:00) Europe, Stockholm - 2:24 PM</option>
+										<option value="Europe/Tirane">(GMT+01:00) Europe, Tirane - 2:24 PM</option>
+										<option value="Europe/Vaduz">(GMT+01:00) Europe, Vaduz - 2:24 PM</option>
+										<option value="Europe/Vatican">(GMT+01:00) Europe, Vatican - 2:24 PM</option>
+										<option value="Europe/Vienna">(GMT+01:00) Europe, Vienna - 2:24 PM</option>
+										<option value="Europe/Warsaw">(GMT+01:00) Europe, Warsaw - 2:24 PM</option>
+										<option value="Europe/Zagreb">(GMT+01:00) Europe, Zagreb - 2:24 PM</option>
+										<option value="Europe/Zurich">(GMT+01:00) Europe, Zurich - 2:24 PM</option>
+										<option value="Africa/Blantyre">(GMT+02:00) Africa, Blantyre - 3:24 PM</option>
+										<option value="Africa/Bujumbura">(GMT+02:00) Africa, Bujumbura - 3:24 PM</option>
+										<option value="Africa/Cairo">(GMT+02:00) Africa, Cairo - 3:24 PM</option>
+										<option value="Africa/Gaborone">(GMT+02:00) Africa, Gaborone - 3:24 PM</option>
+										<option value="Africa/Harare">(GMT+02:00) Africa, Harare - 3:24 PM</option>
+										<option value="Africa/Johannesburg">(GMT+02:00) Africa, Johannesburg - 3:24 PM</option>
+										<option value="Africa/Khartoum">(GMT+02:00) Africa, Khartoum - 3:24 PM</option>
+										<option value="Africa/Kigali">(GMT+02:00) Africa, Kigali - 3:24 PM</option>
+										<option value="Africa/Lubumbashi">(GMT+02:00) Africa, Lubumbashi - 3:24 PM</option>
+										<option value="Africa/Lusaka">(GMT+02:00) Africa, Lusaka - 3:24 PM</option>
+										<option value="Africa/Maputo">(GMT+02:00) Africa, Maputo - 3:24 PM</option>
+										<option value="Africa/Maseru">(GMT+02:00) Africa, Maseru - 3:24 PM</option>
+										<option value="Africa/Mbabane">(GMT+02:00) Africa, Mbabane - 3:24 PM</option>
+										<option value="Africa/Tripoli">(GMT+02:00) Africa, Tripoli - 3:24 PM</option>
+										<option value="Africa/Windhoek">(GMT+02:00) Africa, Windhoek - 3:24 PM</option>
+										<option value="Asia/Amman">(GMT+02:00) Asia, Amman - 3:24 PM</option>
+										<option value="Asia/Beirut">(GMT+02:00) Asia, Beirut - 3:24 PM</option>
+										<option value="Asia/Damascus">(GMT+02:00) Asia, Damascus - 3:24 PM</option>
+										<option value="Asia/Famagusta">(GMT+02:00) Asia, Famagusta - 3:24 PM</option>
+										<option value="Asia/Gaza">(GMT+02:00) Asia, Gaza - 3:24 PM</option>
+										<option value="Asia/Hebron">(GMT+02:00) Asia, Hebron - 3:24 PM</option>
+										<option value="Asia/Jerusalem">(GMT+02:00) Asia, Jerusalem - 3:24 PM</option>
+										<option value="Asia/Nicosia">(GMT+02:00) Asia, Nicosia - 3:24 PM</option>
+										<option value="Europe/Athens">(GMT+02:00) Europe, Athens - 3:24 PM</option>
+										<option value="Europe/Bucharest">(GMT+02:00) Europe, Bucharest - 3:24 PM</option>
+										<option value="Europe/Chisinau">(GMT+02:00) Europe, Chisinau - 3:24 PM</option>
+										<option value="Europe/Helsinki">(GMT+02:00) Europe, Helsinki - 3:24 PM</option>
+										<option value="Europe/Kaliningrad">(GMT+02:00) Europe, Kaliningrad - 3:24 PM</option>
+										<option value="Europe/Kiev">(GMT+02:00) Europe, Kiev - 3:24 PM</option>
+										<option value="Europe/Mariehamn">(GMT+02:00) Europe, Mariehamn - 3:24 PM</option>
+										<option value="Europe/Riga">(GMT+02:00) Europe, Riga - 3:24 PM</option>
+										<option value="Europe/Sofia">(GMT+02:00) Europe, Sofia - 3:24 PM</option>
+										<option value="Europe/Tallinn">(GMT+02:00) Europe, Tallinn - 3:24 PM</option>
+										<option value="Europe/Uzhgorod">(GMT+02:00) Europe, Uzhgorod - 3:24 PM</option>
+										<option value="Europe/Vilnius">(GMT+02:00) Europe, Vilnius - 3:24 PM</option>
+										<option value="Europe/Zaporozhye">(GMT+02:00) Europe, Zaporozhye - 3:24 PM</option>
+										<option value="Africa/Addis_Ababa">(GMT+03:00) Africa, Addis Ababa - 4:24 PM</option>
+										<option value="Africa/Asmara">(GMT+03:00) Africa, Asmara - 4:24 PM</option>
+										<option value="Africa/Dar_es_Salaam">(GMT+03:00) Africa, Dar es Salaam - 4:24 PM</option>
+										<option value="Africa/Djibouti">(GMT+03:00) Africa, Djibouti - 4:24 PM</option>
+										<option value="Africa/Juba">(GMT+03:00) Africa, Juba - 4:24 PM</option>
+										<option value="Africa/Kampala">(GMT+03:00) Africa, Kampala - 4:24 PM</option>
+										<option value="Africa/Mogadishu">(GMT+03:00) Africa, Mogadishu - 4:24 PM</option>
+										<option value="Africa/Nairobi">(GMT+03:00) Africa, Nairobi - 4:24 PM</option>
+										<option value="Antarctica/Syowa">(GMT+03:00) Antarctica, Syowa - 4:24 PM</option>
+										<option value="Asia/Aden">(GMT+03:00) Asia, Aden - 4:24 PM</option>
+										<option value="Asia/Baghdad">(GMT+03:00) Asia, Baghdad - 4:24 PM</option>
+										<option value="Asia/Bahrain">(GMT+03:00) Asia, Bahrain - 4:24 PM</option>
+										<option value="Asia/Kuwait">(GMT+03:00) Asia, Kuwait - 4:24 PM</option>
+										<option value="Asia/Qatar">(GMT+03:00) Asia, Qatar - 4:24 PM</option>
+										<option value="Asia/Riyadh">(GMT+03:00) Asia, Riyadh - 4:24 PM</option>
+										<option value="Europe/Istanbul">(GMT+03:00) Europe, Istanbul - 4:24 PM</option>
+										<option value="Europe/Kirov">(GMT+03:00) Europe, Kirov - 4:24 PM</option>
+										<option value="Europe/Minsk">(GMT+03:00) Europe, Minsk - 4:24 PM</option>
+										<option value="Europe/Moscow">(GMT+03:00) Europe, Moscow - 4:24 PM</option>
+										<option value="Europe/Simferopol">(GMT+03:00) Europe, Simferopol - 4:24 PM</option>
+										<option value="Indian/Antananarivo">(GMT+03:00) Indian, Antananarivo - 4:24 PM</option>
+										<option value="Indian/Comoro">(GMT+03:00) Indian, Comoro - 4:24 PM</option>
+										<option value="Indian/Mayotte">(GMT+03:00) Indian, Mayotte - 4:24 PM</option>
+										<option value="Asia/Tehran">(GMT+03:30) Asia, Tehran - 4:54 PM</option>
+										<option value="Asia/Baku">(GMT+04:00) Asia, Baku - 5:24 PM</option>
+										<option value="Asia/Dubai">(GMT+04:00) Asia, Dubai - 5:24 PM</option>
+										<option value="Asia/Muscat">(GMT+04:00) Asia, Muscat - 5:24 PM</option>
+										<option value="Asia/Tbilisi">(GMT+04:00) Asia, Tbilisi - 5:24 PM</option>
+										<option value="Asia/Yerevan">(GMT+04:00) Asia, Yerevan - 5:24 PM</option>
+										<option value="Europe/Astrakhan">(GMT+04:00) Europe, Astrakhan - 5:24 PM</option>
+										<option value="Europe/Samara">(GMT+04:00) Europe, Samara - 5:24 PM</option>
+										<option value="Europe/Saratov">(GMT+04:00) Europe, Saratov - 5:24 PM</option>
+										<option value="Europe/Ulyanovsk">(GMT+04:00) Europe, Ulyanovsk - 5:24 PM</option>
+										<option value="Europe/Volgograd">(GMT+04:00) Europe, Volgograd - 4:24 PM</option>
+										<option value="Indian/Mahe">(GMT+04:00) Indian, Mahe - 5:24 PM</option>
+										<option value="Indian/Mauritius">(GMT+04:00) Indian, Mauritius - 5:24 PM</option>
+										<option value="Indian/Reunion">(GMT+04:00) Indian, Reunion - 5:24 PM</option>
+										<option value="Asia/Kabul">(GMT+04:30) Asia, Kabul - 5:54 PM</option>
+										<option value="Antarctica/Mawson">(GMT+05:00) Antarctica, Mawson - 6:24 PM</option>
+										<option value="Asia/Aqtau">(GMT+05:00) Asia, Aqtau - 6:24 PM</option>
+										<option value="Asia/Aqtobe">(GMT+05:00) Asia, Aqtobe - 6:24 PM</option>
+										<option value="Asia/Ashgabat">(GMT+05:00) Asia, Ashgabat - 6:24 PM</option>
+										<option value="Asia/Atyrau">(GMT+05:00) Asia, Atyrau - 6:24 PM</option>
+										<option value="Asia/Dushanbe">(GMT+05:00) Asia, Dushanbe - 6:24 PM</option>
+										<option value="Asia/Karachi">(GMT+05:00) Asia, Karachi - 6:24 PM</option>
+										<option value="Asia/Oral">(GMT+05:00) Asia, Oral - 6:24 PM</option>
+										<option value="Asia/Qyzylorda">(GMT+05:00) Asia, Qyzylorda - 7:24 PM</option>
+										<option value="Asia/Samarkand">(GMT+05:00) Asia, Samarkand - 6:24 PM</option>
+										<option value="Asia/Tashkent">(GMT+05:00) Asia, Tashkent - 6:24 PM</option>
+										<option value="Asia/Yekaterinburg">(GMT+05:00) Asia, Yekaterinburg - 6:24 PM</option>
+										<option value="Indian/Kerguelen">(GMT+05:00) Indian, Kerguelen - 6:24 PM</option>
+										<option value="Indian/Maldives">(GMT+05:00) Indian, Maldives - 6:24 PM</option>
+										<option value="Asia/Colombo">(GMT+05:30) Asia, Colombo - 6:54 PM</option>
+										<option value="Asia/Kolkata">(GMT+05:30) Asia, Kolkata - 6:54 PM</option>
+										<option value="Asia/Kathmandu">(GMT+05:45) Asia, Kathmandu - 7:09 PM</option>
+										<option value="Antarctica/Vostok">(GMT+06:00) Antarctica, Vostok - 7:24 PM</option>
+										<option value="Asia/Almaty">(GMT+06:00) Asia, Almaty - 7:24 PM</option>
+										<option value="Asia/Bishkek">(GMT+06:00) Asia, Bishkek - 7:24 PM</option>
+										<option value="Asia/Dhaka">(GMT+06:00) Asia, Dhaka - 7:24 PM</option>
+										<option value="Asia/Omsk">(GMT+06:00) Asia, Omsk - 7:24 PM</option>
+										<option value="Asia/Qostanay">(GMT+06:00) Asia, Qostanay - 7:24 PM</option>
+										<option value="Asia/Thimphu">(GMT+06:00) Asia, Thimphu - 7:24 PM</option>
+										<option value="Asia/Urumqi">(GMT+06:00) Asia, Urumqi - 7:24 PM</option>
+										<option value="Indian/Chagos">(GMT+06:00) Indian, Chagos - 7:24 PM</option>
+										<option value="Asia/Yangon">(GMT+06:30) Asia, Yangon - 7:54 PM</option>
+										<option value="Indian/Cocos">(GMT+06:30) Indian, Cocos - 7:54 PM</option>
+										<option value="Antarctica/Davis">(GMT+07:00) Antarctica, Davis - 8:24 PM</option>
+										<option value="Asia/Bangkok">(GMT+07:00) Asia, Bangkok - 8:24 PM</option>
+										<option value="Asia/Barnaul">(GMT+07:00) Asia, Barnaul - 8:24 PM</option>
+										<option value="Asia/Ho_Chi_Minh">(GMT+07:00) Asia, Ho Chi Minh - 8:24 PM</option>
+										<option value="Asia/Hovd">(GMT+07:00) Asia, Hovd - 8:24 PM</option>
+										<option value="Asia/Jakarta">(GMT+07:00) Asia, Jakarta - 8:24 PM</option>
+										<option value="Asia/Krasnoyarsk">(GMT+07:00) Asia, Krasnoyarsk - 8:24 PM</option>
+										<option value="Asia/Novokuznetsk">(GMT+07:00) Asia, Novokuznetsk - 8:24 PM</option>
+										<option value="Asia/Novosibirsk">(GMT+07:00) Asia, Novosibirsk - 8:24 PM</option>
+										<option value="Asia/Phnom_Penh">(GMT+07:00) Asia, Phnom Penh - 8:24 PM</option>
+										<option value="Asia/Pontianak">(GMT+07:00) Asia, Pontianak - 8:24 PM</option>
+										<option value="Asia/Tomsk">(GMT+07:00) Asia, Tomsk - 8:24 PM</option>
+										<option value="Asia/Vientiane">(GMT+07:00) Asia, Vientiane - 8:24 PM</option>
+										<option value="Indian/Christmas">(GMT+07:00) Indian, Christmas - 8:24 PM</option>
+										<option value="Antarctica/Casey">(GMT+08:00) Antarctica, Casey - 9:24 PM</option>
+										<option value="Asia/Brunei">(GMT+08:00) Asia, Brunei - 9:24 PM</option>
+										<option value="Asia/Choibalsan">(GMT+08:00) Asia, Choibalsan - 9:24 PM</option>
+										<option value="Asia/Hong_Kong">(GMT+08:00) Asia, Hong Kong - 9:24 PM</option>
+										<option value="Asia/Irkutsk">(GMT+08:00) Asia, Irkutsk - 9:24 PM</option>
+										<option value="Asia/Kuala_Lumpur">(GMT+08:00) Asia, Kuala Lumpur - 9:24 PM</option>
+										<option value="Asia/Kuching">(GMT+08:00) Asia, Kuching - 9:24 PM</option>
+										<option value="Asia/Macau">(GMT+08:00) Asia, Macau - 9:24 PM</option>
+										<option value="Asia/Makassar">(GMT+08:00) Asia, Makassar - 9:24 PM</option>
+										<option value="Asia/Manila">(GMT+08:00) Asia, Manila - 9:24 PM</option>
+										<option value="Asia/Shanghai">(GMT+08:00) Asia, Shanghai - 9:24 PM</option>
+										<option value="Asia/Singapore">(GMT+08:00) Asia, Singapore - 9:24 PM</option>
+										<option value="Asia/Taipei">(GMT+08:00) Asia, Taipei - 9:24 PM</option>
+										<option value="Asia/Ulaanbaatar">(GMT+08:00) Asia, Ulaanbaatar - 9:24 PM</option>
+										<option value="Australia/Perth">(GMT+08:00) Australia, Perth - 9:24 PM</option>
+										<option value="Australia/Eucla">(GMT+08:45) Australia, Eucla - 10:09 PM</option>
+										<option value="Asia/Chita">(GMT+09:00) Asia, Chita - 10:24 PM</option>
+										<option value="Asia/Dili">(GMT+09:00) Asia, Dili - 10:24 PM</option>
+										<option value="Asia/Jayapura">(GMT+09:00) Asia, Jayapura - 10:24 PM</option>
+										<option value="Asia/Khandyga">(GMT+09:00) Asia, Khandyga - 10:24 PM</option>
+										<option value="Asia/Pyongyang">(GMT+09:00) Asia, Pyongyang - 10:24 PM</option>
+										<option value="Asia/Seoul">(GMT+09:00) Asia, Seoul - 10:24 PM</option>
+										<option value="Asia/Tokyo">(GMT+09:00) Asia, Tokyo - 10:24 PM</option>
+										<option value="Asia/Yakutsk">(GMT+09:00) Asia, Yakutsk - 10:24 PM</option>
+										<option value="Pacific/Palau">(GMT+09:00) Pacific, Palau - 10:24 PM</option>
+										<option value="Australia/Darwin">(GMT+09:30) Australia, Darwin - 10:54 PM</option>
+										<option value="Antarctica/DumontDUrville">(GMT+10:00) Antarctica, DumontDUrville - 11:24 PM</option>
+										<option value="Asia/Ust-Nera">(GMT+10:00) Asia, Ust-Nera - 11:24 PM</option>
+										<option value="Asia/Vladivostok">(GMT+10:00) Asia, Vladivostok - 11:24 PM</option>
+										<option value="Australia/Brisbane">(GMT+10:00) Australia, Brisbane - 11:24 PM</option>
+										<option value="Australia/Lindeman">(GMT+10:00) Australia, Lindeman - 11:24 PM</option>
+										<option value="Pacific/Chuuk">(GMT+10:00) Pacific, Chuuk - 11:24 PM</option>
+										<option value="Pacific/Guam">(GMT+10:00) Pacific, Guam - 11:24 PM</option>
+										<option value="Pacific/Port_Moresby">(GMT+10:00) Pacific, Port Moresby - 11:24 PM</option>
+										<option value="Pacific/Saipan">(GMT+10:00) Pacific, Saipan - 11:24 PM</option>
+										<option value="Australia/Adelaide">(GMT+10:30) Australia, Adelaide - 11:54 PM</option>
+										<option value="Australia/Broken_Hill">(GMT+10:30) Australia, Broken Hill - 11:54 PM</option>
+										<option value="Antarctica/Macquarie">(GMT+11:00) Antarctica, Macquarie - 12:24 AM</option>
+										<option value="Asia/Magadan">(GMT+11:00) Asia, Magadan - 12:24 AM</option>
+										<option value="Asia/Sakhalin">(GMT+11:00) Asia, Sakhalin - 12:24 AM</option>
+										<option value="Asia/Srednekolymsk">(GMT+11:00) Asia, Srednekolymsk - 12:24 AM</option>
+										<option value="Australia/Currie">(GMT+11:00) Australia, Currie - 12:24 AM</option>
+										<option value="Australia/Hobart">(GMT+11:00) Australia, Hobart - 12:24 AM</option>
+										<option value="Australia/Lord_Howe">(GMT+11:00) Australia, Lord Howe - 12:24 AM</option>
+										<option value="Australia/Melbourne">(GMT+11:00) Australia, Melbourne - 12:24 AM</option>
+										<option value="Australia/Sydney">(GMT+11:00) Australia, Sydney - 12:24 AM</option>
+										<option value="Pacific/Bougainville">(GMT+11:00) Pacific, Bougainville - 12:24 AM</option>
+										<option value="Pacific/Efate">(GMT+11:00) Pacific, Efate - 12:24 AM</option>
+										<option value="Pacific/Guadalcanal">(GMT+11:00) Pacific, Guadalcanal - 12:24 AM</option>
+										<option value="Pacific/Kosrae">(GMT+11:00) Pacific, Kosrae - 12:24 AM</option>
+										<option value="Pacific/Noumea">(GMT+11:00) Pacific, Noumea - 12:24 AM</option>
+										<option value="Pacific/Pohnpei">(GMT+11:00) Pacific, Pohnpei - 12:24 AM</option>
+										<option value="Asia/Anadyr">(GMT+12:00) Asia, Anadyr - 1:24 AM</option>
+										<option value="Asia/Kamchatka">(GMT+12:00) Asia, Kamchatka - 1:24 AM</option>
+										<option value="Pacific/Funafuti">(GMT+12:00) Pacific, Funafuti - 1:24 AM</option>
+										<option value="Pacific/Kwajalein">(GMT+12:00) Pacific, Kwajalein - 1:24 AM</option>
+										<option value="Pacific/Majuro">(GMT+12:00) Pacific, Majuro - 1:24 AM</option>
+										<option value="Pacific/Nauru">(GMT+12:00) Pacific, Nauru - 1:24 AM</option>
+										<option value="Pacific/Norfolk">(GMT+12:00) Pacific, Norfolk - 12:24 AM</option>
+										<option value="Pacific/Tarawa">(GMT+12:00) Pacific, Tarawa - 1:24 AM</option>
+										<option value="Pacific/Wake">(GMT+12:00) Pacific, Wake - 1:24 AM</option>
+										<option value="Pacific/Wallis">(GMT+12:00) Pacific, Wallis - 1:24 AM</option>
+										<option value="Antarctica/McMurdo">(GMT+13:00) Antarctica, McMurdo - 2:24 AM</option>
+										<option value="Pacific/Auckland">(GMT+13:00) Pacific, Auckland - 2:24 AM</option>
+										<option value="Pacific/Enderbury">(GMT+13:00) Pacific, Enderbury - 2:24 AM</option>
+										<option value="Pacific/Fakaofo">(GMT+13:00) Pacific, Fakaofo - 2:24 AM</option>
+										<option value="Pacific/Fiji">(GMT+13:00) Pacific, Fiji - 2:24 AM</option>
+										<option value="Pacific/Tongatapu">(GMT+13:00) Pacific, Tongatapu - 2:24 AM</option>
+										<option value="Pacific/Chatham">(GMT+13:45) Pacific, Chatham - 3:09 AM</option>
+										<option value="Pacific/Apia">(GMT+14:00) Pacific, Apia - 3:24 AM</option>
+										<option value="Pacific/Kiritimati">(GMT+14:00) Pacific, Kiritimati - 3:24 AM</option>
+							        </select>
+                                <button class="btn btn-lg UserAccount_Btn">
+           						<span class="ladda-label">Save Changes</span>
+       							</button>
+                            </div>
+                        </form>
+            		</div>
+                   
+            		<div class="tab-pane " id="Security">
+                            <!-- <h3 class="col-lg-6 title-block">2FA Settings</h3> -->
+                           <!--  <h3 class="col-lg-6 title-block">Change Password</h3> -->
+                            <div class="col-lg-6 username-container">
+                            	<h3 class="title-block">2FA Settings</h3>
+                                <p class="SecurityInfo">This is critical for securing your money. With 2FA turned on even if a hacker gains access to your account by hacking your email (common) they cannot take your money. We highly recommend turning on 2FA for "login" and using Google Authenticator.</p>
+
+                                <form>
+						            <!-- <h4 class="ThinHeading bottommargin-xs">2FA for login</h4> -->
+						            <h3 class="title-block mt-4">2FA for login</h3>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor" checked="&quot;checked&quot;">
+						                    <label class="bigger">None <span class="muted">—</span><small> Least secure</small></label>
+						                </div>
+						            </div>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor">
+						                    <label class="bigger">SMS</label>
+						                </div>
+						                <span class="help-block alert alert-info">Verify your phone number to enable 2FA via SMS.</span>
+						            </div>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor" value="external">
+						                    <label class="bigger"><a target="_blank" href="https://support.google.com/accounts/answer/1066447?hl=en">Google Authenticator</a> or <a target="_blank" href="https://www.authy.com/">Authy</a></label>
+						                </div>
+						            </div>
+
+						            <button class="btn btn-lg UserAccount_Btn">
+						             Update 2FA for login
+						            <!-- <span class="ladda-spinner"></span> -->
+						            </button>
+						        </form>
+                            </div>
+
+                            <div class="col-lg-6">
+                            	<h3 class="title-block">Change Password</h3>
+								<div class="form-group">
+					                <label>Current</label>
+					                <input type="password" placeholder="Your Old Password" class="sm-form-control">
+					            </div>
+                                <div class="clear"></div>
+	                            <div class="divider">
+	                            	<i class="fa fa-lock" aria-hidden="true"></i>
+	                            </div>
+	                            <div class="clear"></div>
+								<div class="form-group">
+				               		<label>ENTER A NEW PASSWORD</label>
+				    		   		<input type="password" placeholder="Your Old Password" class="sm-form-control">
+				          		</div>
+								<div class="form-group">
+				            	    <label>VERIFY PASSWORD</label>
+				                	<input type="password" id="old_password" name="old_password" placeholder="Your Old Password" class="sm-form-control">
+				            	</div>
+				            	<span class="help-block">Changing password will delete all your active web sessions.</span>
+				            	<button class="btn btn-lg UserAccount_Btn">Save Changes</button>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="divider"><i class="fa fa-circle"></i></div>
+                            <div class="clear"></div>
+
+                            <div class="col-lg-6">
+                                <form>
+						            <!-- <h4 class="ThinHeading bottommargin-xs">2FA for sending bitcoin</h4> -->
+						            <h3 class="title-block">2FA for sending bitcoin</h3>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor" checked="&quot;checked&quot;">
+						                    <label class="bigger">None <span class="muted">—</span><small> Least secure</small></label>
+						                </div>
+						            </div>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor">
+						                    <label class="bigger">SMS</label>
+						                </div>
+						                <span class="help-block alert alert-info">Verify your phone number to enable 2FA via SMS.</span>
+						            </div>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor" value="external">
+						                    <label class="bigger"><a target="_blank" href="https://support.google.com/accounts/answer/1066447?hl=en">Google Authenticator</a> or <a target="_blank" href="https://www.authy.com/">Authy</a></label>
+						                </div>
+						            </div>
+
+						            <button class="btn btn-lg UserAccount_Btn">
+						             Update 2FA for Sending
+						            <!-- <span class="ladda-spinner"></span> -->
+						            </button>
+						        </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <form>
+						            <!-- <h4 class="ThinHeading bottommargin-xs">2Use 2FA to release bitcoin</h4> -->
+						            <h3 class="title-block">2Use 2FA to release bitcoin</h3>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor" checked="&quot;checked&quot;">
+						                    <label class="bigger">None <span class="muted">—</span><small> Least secure</small></label>
+						                </div>
+						            </div>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor">
+						                    <label class="bigger">SMS</label>
+						                </div>
+						                <span class="help-block alert alert-info">Verify your phone number to enable 2FA via SMS.</span>
+						            </div>
+						            <div class="field">
+						                <div class="ui radio checkbox login-two-factor-checkbox">
+						                    <input type="radio" name="login-two-factor" value="external">
+						                    <label class="bigger"><a target="_blank" href="https://support.google.com/accounts/answer/1066447?hl=en">Google Authenticator</a> or <a target="_blank" href="https://www.authy.com/">Authy</a></label>
+						                </div>
+						            </div>
+
+						            <button class="btn btn-lg UserAccount_Btn">
+						             Update 2FA for Release
+						            <!-- <span class="ladda-spinner"></span> -->
+						            </button>
+						        </form>
+							</div>
+							<!-- <div class="row"> -->
+									<div class="col-lg-12 mt-4">
+										<h3 class="title-block">Active sessions</h3>
+										<h4 class="thin-heading bottommargin-xs">
+											Web sessions
+													</h4>
+													<div class="table-responsive">
+												<table class="table table-hover account-activity-table" data-recording-disable="">
+													<thead>
+													<tr>
+														<th>Signed in</th>
+														<th>Browser</th>
+														<th>IP Address</th>
+														<th>Location</th>
+														<th>Current</th>
+														<th></th>
+													</tr>
+													</thead>
+													<tbody>
+																			<tr>
+															<td><abbr title="2019-12-16 02:49:58">1 day ago</abbr></td>
+															<td><span title="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36">Chrome ( <i class="icon-line2-screen-desktop"></i> Linux )</span></td>
+															<td>103.87.104.181</td>
+															<td>Unknown</td>
+															<td class="text-center"><i class="fa fa-check" style="text-align: center;"></i></td>
+															<td class="text-center"><a href="" title="Sign out" alt="Sign out">x</a></td>
+														</tr>
+																		</tbody>
+												</table>
+											</div>
+												<div class="divider bottommargin-sm notopmargin"><i class="icon-circle"></i></div>
+									</div>
+									<div class="col-lg-12">
+										<h3 class="title-block">Account activity</h3>
+										<h4 class="thin-heading bottommargin-xs">
+											Last 20 actions
+										</h4>
+										<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="table-responsive" data-recording-disable="" id="activity-slimscroll" data-height="320px" style="overflow: hidden; width: auto; height: 250px;">
+											<table class="table table-hover">
+												<thead>
+												<tr>
+													<th>Action</th>
+													<th>Browser</th>
+													<th>IP Address</th>
+													<th>Near</th>
+													<th>When</th>
+												</tr>
+												</thead>
+												<tbody id="activity-container">
+													
+												
+									
+									<tr>
+										<td>User login</td>
+										<td>Chrome ( <i class="icon-line2-screen-desktop"></i> Linux )</td>
+										<td>103.87.104.181</td>
+										<td>n/a</td>
+										<td><abbr title="2019-12-16 00:43:15">1 day ago</abbr></td>
+									</tr>
+									<tr>
+										<td>User logout</td>
+										<td>Chrome ( <i class="icon-line2-screen-desktop"></i> Linux )</td>
+										<td>103.87.104.181</td>
+										<td>n/a</td>
+										<td><abbr title="2019-12-16 00:42:29">1 day ago</abbr></td>
+									</tr>
+									<tr>
+										<td>User login</td>
+										<td>Chrome ( <i class="icon-line2-screen-desktop"></i> Linux )</td>
+										<td>103.87.104.181</td>
+										<td>n/a</td>
+										<td><abbr title="2019-12-16 00:25:34">1 day ago</abbr></td>
+									</tr>
+									<tr>
+										<td>User login</td>
+										<td>Firefox ( <i class="icon-line2-screen-desktop"></i> Ubuntu )</td>
+										<td>103.87.104.181</td>
+										<td>n/a</td>
+										<td><abbr title="2019-12-16 00:05:26">1 day ago</abbr></td>
+									</tr>
+									<tr>
+										<td>User logout</td>
+										<td>Chrome ( <i class="icon-line2-screen-desktop"></i> Linux )</td>
+										<td>103.87.104.181</td>
+										<td>n/a</td>
+										<td><abbr title="2019-12-16 00:03:05">1 day ago</abbr></td>
+									</tr>
+									
+									
+								</tbody>
+												<!-- <tfoot>
+												<tr class="show-more" style="">
+													<td colspan="5" class="text-center">
+														<a class="next-log-link" href="https://paxful.com/account/activity-log">Show me more...</a>
+													</td>
+												</tr>
+												</tfoot> -->
+											</table>
+										</div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 250px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+									</div>
+								<!-- </div> -->
+            		</div>
+                    
+                    
+                	<div class="tab-pane " id="Verification">
+                		<div class="col-lg-12 username-container">
+                            	<h3 class="title-block">Verification</h3>
+                            	<p class="SecurityInfo">Vendors will be able to give you better deals for buying bitcoins when you are verified on Osiz_LBC!</p>
+                            	<h3 class="title-block">ID Verification</h3>
+                            	<span class="help-block alert alert-info">• It is government issued (e.g. passport).<br>
+                            	• It must be valid (not expired), legible and in color.<br>• It must not be edited or censored in any way.<br>• To be verified within few minutes data on the document should match entered data in the form.<br>• Enter the name EXACTLY as it appears on your document.</span>
+                            	<button class="btn btn-lg UserAccount_Btn">
+						             Click Here See Verification Video
+						            <!-- <span class="ladda-spinner"></span> -->
+						        </button>
+						        <div class="row js-fullstory-exclude">
+                    <div class="col-md-6 field-row">
+                        <div class="form-group">
+                            <label  class="control-label">Country your photo ID is from*</label>
+							<select  class="form-control" required="" style="width: 100%;height: 40px;font-size: 14px;" name="issue_country_iso3"><option value="" selected="selected">Click to select</option>
+								<option value="AFG">Afghanistan</option>
+								<option value="ALB">Albania</option>
+								<option value="DZA">Algeria</option><option value="AND">Andorra</option><option value="AGO">Angola</option><option value="AIA">Anguilla</option><option value="ATG">Antigua and Barbuda</option><option value="ARG">Argentina</option><option value="ARM">Armenia</option><option value="AUS">Australia</option><option value="AUT">Austria</option><option value="AZE">Azerbaijan</option><option value="BHS">Bahamas</option><option value="BHR">Bahrain</option><option value="BGD">Bangladesh</option><option value="BRB">Barbados</option><option value="BLR">Belarus</option><option value="BEL">Belgium</option><option value="BLZ">Belize</option><option value="BEN">Benin</option><option value="BMU">Bermuda</option><option value="BTN">Bhutan</option><option value="BOL">Bolivia</option><option value="BIH">Bosnia and Herzegovina</option><option value="BWA">Botswana</option><option value="BRA">Brazil</option><option value="BRN">Brunei Darussalam</option><option value="BGR">Bulgaria</option><option value="BFA">Burkina Faso</option><option value="KHM">Cambodia</option><option value="CMR">Cameroon</option><option value="CAN">Canada</option><option value="CPV">Cape Verde</option><option value="CYM">Cayman Islands</option><option value="CAF">Central African Republic</option><option value="TCD">Chad</option><option value="CHL">Chile</option><option value="CHN">China</option><option value="COL">Colombia</option><option value="COM">Comoros</option><option value="COD">Congo, Democratic Republic of</option><option value="CRI">Costa Rica</option><option value="HRV">Croatia (Hrvatska)</option><option value="CYP">Cyprus</option><option value="CZE">Czech Republic</option><option value="DNK">Denmark</option><option value="DJI">Djibouti</option><option value="DMA">Dominica</option><option value="DOM">Dominican Republic</option><option value="TLS">East Timor</option><option value="ECU">Ecuador</option><option value="EGY">Egypt</option><option value="SLV">El Salvador</option><option value="GNQ">Equatorial Guinea</option><option value="ERI">Eritrea</option><option value="EST">Estonia</option><option value="SWZ">Eswatini</option><option value="ETH">Ethiopia</option><option value="FRO">Faroe Islands</option><option value="FJI">Fiji</option><option value="FIN">Finland</option><option value="FRA">France</option><option value="GAB">Gabon</option><option value="GMB">Gambia</option><option value="GEO">Georgia</option><option value="DEU">Germany</option><option value="GHA">Ghana</option><option value="GIB">Gibraltar</option><option value="GRC">Greece</option><option value="GRD">Grenada</option><option value="GUM">Guam</option><option value="GTM">Guatemala</option><option value="GGY">Guernsey</option><option value="GIN">Guinea</option><option value="GNB">Guinea-Bissau</option><option value="GUY">Guyana</option><option value="HTI">Haiti</option><option value="HND">Honduras</option><option value="HKG">Hong Kong</option><option value="HUN">Hungary</option><option value="ISL">Iceland</option><option value="IND">India</option><option value="IDN">Indonesia</option><option value="IRL">Ireland</option><option value="IMN">Isle of Man</option><option value="ISR">Israel</option><option value="ITA">Italy</option><option value="CIV">Ivory Coast</option><option value="JAM">Jamaica</option><option value="JPN">Japan</option><option value="JEY">Jersey</option><option value="JOR">Jordan</option><option value="KAZ">Kazakhstan</option><option value="KEN">Kenya</option><option value="KOR">Korea (south)</option><option value="XKX">Kosovo</option><option value="KWT">Kuwait</option><option value="KGZ">Kyrgyzstan</option><option value="LAO">Laos</option><option value="LVA">Latvia</option><option value="LSO">Lesotho</option><option value="LBR">Liberia</option><option value="LIE">Liechtenstein</option><option value="LTU">Lithuania</option><option value="LUX">Luxembourg</option><option value="MAC">Macao</option><option value="MKD">Macedonia</option><option value="MDG">Madagascar</option><option value="MWI">Malawi</option><option value="MYS">Malaysia</option><option value="MDV">Maldives</option><option value="MLI">Mali</option><option value="MLT">Malta</option><option value="MHL">Marshall Islands</option><option value="MRT">Mauritania</option><option value="MUS">Mauritius</option><option value="MEX">Mexico</option><option value="FSM">Micronesia</option><option value="MDA">Moldova</option><option value="MCO">Monaco</option><option value="MNG">Mongolia</option><option value="MNE">Montenegro</option><option value="MSR">Montserrat</option><option value="MAR">Morocco</option><option value="MOZ">Mozambique</option><option value="MMR">Myanmar</option><option value="NAM">Namibia</option><option value="NPL">Nepal</option><option value="NLD">Netherlands</option><option value="NZL">New Zealand</option><option value="NIC">Nicaragua</option><option value="NER">Niger</option><option value="NGA">Nigeria</option><option value="NOR">Norway</option><option value="OMN">Oman</option><option value="PAK">Pakistan</option><option value="PLW">Palau</option><option value="PSE">Palestine</option><option value="PAN">Panama</option><option value="PNG">Papua New Guinea</option><option value="PRY">Paraguay</option><option value="PER">Peru</option><option value="PHL">Philippines</option><option value="POL">Poland</option><option value="PRT">Portugal</option><option value="PRI">Puerto Rico</option><option value="QAT">Qatar</option><option value="ROU">Romania</option><option value="RUS">Russia</option><option value="RWA">Rwanda</option><option value="KNA">Saint Kitts and Nevis</option><option value="LCA">Saint Lucia</option><option value="VCT">Saint Vincent and the Grenadines</option><option value="SMR">San Marino</option><option value="STP">Sao Tome and Principe</option><option value="SAU">Saudi Arabia</option><option value="SEN">Senegal</option><option value="SRB">Serbia</option><option value="SYC">Seychelles</option><option value="SLE">Sierra Leone</option><option value="SGP">Singapore</option><option value="SVK">Slovakia</option><option value="SVN">Slovenia</option><option value="ZAF">South Africa</option><option value="ESP">Spain</option><option value="LKA">Sri Lanka</option><option value="SUR">Suriname</option><option value="SWE">Sweden</option><option value="CHE">Switzerland</option><option value="TWN">Taiwan</option><option value="TJK">Tajikistan</option><option value="TZA">Tanzania</option><option value="THA">Thailand</option><option value="TGO">Togo</option><option value="TON">Tonga</option><option value="TTO">Trinidad and Tobago</option><option value="TUN">Tunisia</option><option value="TUR">Turkey</option><option value="TKM">Turkmenistan</option><option value="TCA">Turks and Caicos Islands</option><option value="USA">USA</option><option value="UGA">Uganda</option><option value="UKR">Ukraine</option><option value="ARE">United Arab Emirates</option><option value="GBR">United Kingdom</option><option value="URY">Uruguay</option><option value="UZB">Uzbekistan</option><option value="VUT">Vanuatu</option><option value="VEN">Venezuela</option><option value="VNM">Vietnam</option><option value="VGB">Virgin Islands (British)</option><option value="VIR">Virgin Islands (US)</option><option value="ZMB">Zambia</option><option value="ZWE">Zimbabwe</option><option value="Click to select">Click to select</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;height: 40px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-issue-country-select-container"><span class="select2-selection__rendered" id="select2-issue-country-select-container" title="Click to select">Click to select</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            <span id="chinese-instructions-block" class="help-block" style="display: none;"><a href="https://paxful.com/2/documents/PAXFUL身份验证操作说明.pdf" target="_blank">Click here for verification instructions in Chinese</a></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 field-row">
+                        <div class="form-group">
+                            <label class="control-label">Type of Photo ID*</label>
+							<select required="" class="form-control" style="width: 100%;height: 40px;font-size: 14px;"
+							 name="document_type">
+								<!-- <option value="" selected="selected">Click to select</option> -->
+								<option value="PASSPORT" style="display: block;">Passport</option>
+								<option value="DRIVING_LICENSE" style="display: block;">Driving license</option>
+								<option value="ID_CARD" style="display: block;">ID Card</option>
+							</select>
+						<span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-document-type-select-container"><span class="select2-selection__rendered" id="select2-document-type-select-container" title="Click to select">Click to select</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row js-fullstory-exclude date_of_birth_group">
+                    <div class="col-xs-12">
+                        <label for="date_of_birth" class="control-label">Date of birth*</label>
+                    </div>
+                    <div class="col-md-2 col-xs-12 field-row">
+                        <label for="date_of_birth_day" class="control-label light">Day</label>
+                        <div class="form-group">
+                            <input class="form-control verificationInput" id="date_of_birth_day" required="" min="1" max="31" name="date_of_birth_day" type="number" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 field-row">
+                        <label  class="control-label light">Month</label>
+                        <div class="form-group">
+							<select class="form-control" required="" style="width: 100%;height: 40px;font-size: 14px;" name="date_of_birth_month" tabindex="-1" aria-hidden="true">
+								<option value="" selected="selected">Click to select</option>
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12 field-row">
+                        <label for="date_of_birth_year" class="control-label light">Year</label>
+                        <div class="form-group">
+                            <input class="form-control verificationInput" id="date_of_birth_year" required="" min="1900" name="date_of_birth_year" type="number" value="">
+                        </div>
+					</div>
+					<div class="col-md-6 field-row">
+							<div class="form-group">
+								<label  class="control-label">First name*</label>
+								<input class=" form-control verificationInput" required="" name="first_name_original" type="text" >
+							</div>
+						</div>
+						<div class="col-md-6 field-row">
+							<div class="form-group">
+								<label  class="control-label">Middle name (optional)</label>
+								<input class=" form-control verificationInput"  placeholder="Leave empty if no middle name" name="middle_name_original" type="text">
+							</div>
+						</div>
+						<div class="col-md-6 field-row">
+							<div class="form-group">
+								<label class="control-label">Last name*</label>
+								<input class=" form-control verificationInput"  required="" name="last_name_original" type="text" >
+							</div>
+						</div>
+                </div>
+                <button class="btn btn-lg UserAccount_Btn">
+						             Start Verification Process
+						            <!-- <span class="ladda-spinner"></span> -->
+						        </button>
+
+						        <h3 class="title-block mt-4">Proof of address Verification</h3>
+						        <span class="help-block alert alert-info">Please verify your ID first before you can verify your address.</span>
+						</div>
+						<!-- <div class="row" data-recording-disable=""> -->
+								
+							<!-- </div> -->
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+</section>
+<app-footer></app-footer>

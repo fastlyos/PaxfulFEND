@@ -1,0 +1,328 @@
+.paxfulWayContent__icon {
+    height: 72px;
+    width: 72px;
+}
+.display-2 {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 1.33;
+}
+.paxfulWayContent {
+    max-width: 848px;
+    position: relative;
+}
+.spendBitcoinCard__item {
+    background: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    border-radius: 6px;
+    color: #333;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column nowrap;
+    padding: 24px;
+    text-decoration: none;
+    -webkit-transition: background-color .25s ease-in-out,border-color .25s ease-in-out,box-shadow 125ms ease-in-out;
+    transition: background-color .25s ease-in-out,border-color .25s ease-in-out,box-shadow 125ms ease-in-out;
+    width: 100%;
+}
+.spendBitcoinCard__title {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    margin-bottom: 8px;
+}
+.spendBitcoinCard__image {
+    display: inline-block;
+    height: 24px;
+    margin-right: 8px;
+}
+.spendBitcoinCard__description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.spendBitcoinCard__body{
+    height: 68px;
+}
+.spendBitcoinCard .h3 {
+    color: #623590;
+    font-size: 1.6vw;
+    font-weight: 600;
+    line-height: 1.33;
+}
+.spendBitcoinCard__link {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    color: #623590;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+.OffersAffiliateShareLink__collapseButton{
+    display: inline-flex;
+    width: initial;
+}
+.OffersAffiliateShareLink__collapseButton{
+    text-decoration: none !important;
+    margin-top: 20px;
+    display: -webkit-box;
+    text-align: left;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+}
+.OffersTableBody__loadMoreButton {
+    width: auto;height: 50px;
+} 
+.changeicon{
+    cursor: pointer;
+}
+.CurrencyAmountPicker__controlWrapper {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #d8d8d8;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.CurrencyAmountPicker__selectWrapper {
+    position: relative;
+}
+.CurrencyAmountPicker__selectContainer.CurrencyAmountPicker__isVisible {
+    display: block;
+    overflow-y: auto;
+}
+.CurrencyAmountPicker__singleSelectContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100%;
+}
+ .CurrencyAmountPicker__backButton {
+    border: none;
+    background-color: transparent;
+    flex-basis: 16px;
+    padding: 0;
+    display: none;
+    margin-right: 16px;
+}
+.CurrencyAmountPicker__control {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-flow: row-reverse wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 48px;
+    border-radius: 24px;
+    padding: 8px 40px 8px 24px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+.CurrencyAmountPicker__placeholder {
+    position: absolute;
+    left: 72px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 1.15;
+    color: #a9a9a9;
+    pointer-events: none;
+}
+.CurrencyAmountPicker__menuContainer {
+    box-shadow: none;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #333333;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    min-height: 0;
+}
+.css-1hwfws3 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    padding: 2px 8px;
+    overflow: hidden;
+}
+.CurrencyAmountPicker__menuList {
+    position: relative;
+    padding: 0;
+    height: 500px;
+    overflow: scroll;
+}
+.CurrencyAmountPicker__groupHeader {
+    display: -webkit-box;
+    display: flex;
+    width: 400px;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+.CurrencyAmountPicker__popularCurrenciesWrapper {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #d8d8d8;
+}
+.CurrencyAmountPicker__selectedOption {
+    border: 1px solid #19bf33;
+    background-color: #f8fdf9;
+}
+.CurrencyAmountPicker__focusedOption {
+    background-color: #f7fcfe;
+    border-color: #00a5ef;
+}
+.CurrencyAmountPicker__allCurrenciesWrapper {
+    background-color: #ffffff;
+}
+.CurrencyAmountPicker__groupHeader {
+    display: -webkit-box;
+    display: flex;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}.CurrencyAmountPicker__currencyOption {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 7px 8px 7px 24px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+ .CurrencyAmountPicker__currencyAbbreviation {
+    min-width: 72px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    padding: 7px 16px;
+    border-radius: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.CurrencyAmountPicker__optionsWrapper {
+    padding: 10px;
+}
+.CurrencyAmountPicker__selectWrapper {
+    position: absolute;z-index: 1000;
+}
+.CurrencyAmountPicker__selectContainer.CurrencyAmountPicker__isVisible {
+    display: block;
+    overflow-y: auto;
+}
+.CurrencyAmountPicker__singleSelectContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100%;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+#myInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#myInput:focus {outline: 3px solid #ddd;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+.example-tooltip-red {
+  background: black;
+  font-size: 14px;
+  /*font-color: black;*/
+  height: 30px;
+}
+
+
+
+.c-offersHero__icon {
+    min-width: 80px;
+    max-width: 260px;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.c-offersHero__title {
+    color: inherit;
+    font-size: 48px;
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1.33;
+    margin-bottom: 16px;
+}
+.fontsize_XS{
+    font-size: 26px;
+}

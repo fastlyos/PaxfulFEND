@@ -1,0 +1,216 @@
+<app-navbar></app-navbar>
+<section style="margin-top: 100px;">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-lg-12">
+				<div class="">
+					<h2 class="send_recive-heading">Currnt Balance</h2>
+					<p><span class="BTC-amt">0 BTC</span>
+					<small class="INR-amt"> ≈ 0 INR</small></p>
+					<button class="btn s-button">ADD MONEY</button>
+				</div>
+			</div>
+			<div class="col-lg-8 offset-2 col-sm-12">
+				<span class="helpblock">The worth of your bitcoin in INR varies depending on the current market price. Don’t worry, this is normal. You’ll still have the same amount of bitcoin in your wallet.</span>
+				<button class="btn send-bitcoin-btn"><span>Send Bitcoin</span></button>
+				<div class="pull-right help-link" (click)="parentModal.show()">Help using wallet</div>
+
+				<div class="modal fade" bsModal #parentModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h4 id="dialog-nested-name1" class="modal-title pull-left">Step One</h4>
+				        <button type="button" class="close pull-right close1" aria-label="Close" (click)="parentModal.hide()" >
+				          <span aria-hidden="true" >&times;</span>
+				        </button>
+				      </div>
+				      <div class="col-lg-12 text-center">
+							<div class="">
+								<h2 class="send_recive-heading">Currnt Balance</h2>
+								<p><span class="BTC-amt">0 BTC</span>
+								<small class="INR-amt"> ≈ 0 INR</small></p>
+								<button class="btn s-button1" data-toggle="tooltip" data-html="true" title="You can only spend what you have in your Paxful Wallet. Your balance is shown in bitcoin and INR. To add value to your digital wallet, click “Add money” in the menu.">ADD MONEY</button> 
+							</div>
+						</div>
+				      <div class="modal-body">
+				        <button class="btn s-button-nextbtn pull-right" (click)="childModal.show()">For Second Step</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				 
+				<div class="modal fade" bsModal #childModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name2">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h4 id="dialog-nested-name2" class="modal-title pull-left">Step Two</h4>
+				        <button type="button" class="close pull-right" aria-label="Close" (click)="childModal.hide()">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="col-lg-12 col-sm-12">
+						<span class="helpblock">The worth of your bitcoin in INR varies depending on the current market price. Don’t worry, this is normal. You’ll still have the same amount of bitcoin in your wallet.</span>
+						<button class="btn send-bitcoin-btn" data-toggle="tooltip" data-html="true" title="You can only spend what you have in your Paxful Wallet. Your balance is shown in bitcoin and INR. To add value to your digital wallet, click “Add money” in the menu.">Send Bitcoin</button></div>
+			     	  	<div class="modal-body">
+				       <button class="btn s-button-nextbtn1" (click)="thirdModal.show()">Open third modal</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="modal fade" bsModal #thirdModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name3">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h4 id="dialog-nested-name3" class="modal-title pull-left">Step Three</h4>
+				        <button type="button" class="close pull-right" aria-label="Close" (click)="thirdModal.hide()">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      		<div class="col-lg-12" style="margin-top: 50px;margin-bottom: 30px;margin-left: 158px;">
+				<div class="row text-center">
+
+					<div class="qrcodeimg text-center">
+						<qrcode [qrdata]="'Your QR code data string'" [size]="120" [level]="'M'"></qrcode>	
+					</div>
+
+					<div class="col-lg-8" data-toggle="tooltip" data-html="true" title="You can only spend what you have in your Paxful Wallet. Your balance is shown in bitcoin and INR. To add value to your digital wallet, click “Add money” in the menu.">
+						<div class="add-margin-top">
+							<p class="address-desc pull-left">YOUR BITCOIN DEPOSIT ADDRESS IS BELOW <a 
+								class="example-button"> <i class="fa fa-question-circle-o" aria-hidden="true" ></i></a></p>
+							<p class="pull-left">3KrRPoMMH5fZ4MCYTXFX8xoHPgNgNkYvwC</p>
+							<div class="pull-left">
+								<button class="btn copy-button">copy address</button>
+								<a href="" class="new-address">Get a new address</a>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				      <div class="modal-body">
+				        <button class="btn s-button-nextbtn1">End Tour</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-7 offset-3" style="margin-top: 50px;">
+				<div class="row">
+					<div class="col-lg-3 qr-hover">
+						<div class="qrcodeimg">
+							<qrcode [qrdata]="'Your QR code data string'" [size]="110" [level]="'M'"></qrcode>	
+							<div class="overlay">
+							<a>
+								<i class="fa fa-expand" aria-hidden="true"  style="color: white"   data-toggle="modal" data-target=".bd-example-modal-lg"></i>
+								
+							</a>
+
+							</div>
+							<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content1">
+								      <div class="modal-header">
+								        <h5 class="modal-title" id="exampleModalLabel"> Get a new address</h5>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								      </div>
+								      <div class="modal-body">
+								      <p>To maximize privacy, use a new bitcoin address each time you receive a deposit. Once a transaction is made with the address below, a new bitcoin address will be generated for you. Older deposit addresses will still work.</p>
+								      <input type="text" name="" placeholder="3KrRPoMMH5fZ4MCYTXFX8xoHPgNgNkYvwC" class="form-control" style="width: 100%;border-radius: 20px;height: 30px;padding:20px;margin-bottom:10px;font-size: 14px;">
+								        <div class="qrcodeimg">
+											<qrcode [qrdata]="'Your QR code data string'" [size]="300" [level]="'M'"></qrcode>
+											</div>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="add-margin-top">
+							<p class="address-desc pull-left">YOUR BITCOIN DEPOSIT ADDRESS IS BELOW  <i matTooltip="Deposit bitcoin to this address from another digital wallet or a bitcoin ATM. This is your permanent bitcoin wallet address and will never change."
+								matTooltipClass="example-tooltip-red"
+								aria-label="Button that shows a red tooltip" class="fa fa-question-circle-o" aria-hidden="true"></i></p>
+							<p class="pull-left">3KrRPoMMH5fZ4MCYTXFX8xoHPgNgNkYvwC</p>
+							<div class="pull-left">
+								<button class="btn copy-button" ngxClipboard [cbContent]="'3KrRPoMMH5fZ4MCYTXFX8xoHPgNgNkYvwC'" (click)="copied()">copy address</button>
+								<a href="" class="new-address">Get a new address</a>	
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 	
+	</div>
+</section> 
+
+<section style="margin-top: 30px;margin-bottom: 10px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="exTab2" class="container">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#1" data-toggle="tab">Address</a>
+                        </li>
+                        <li>
+                        	<a href="#2" data-toggle="tab">Transaction <i class="fa fa-question-circle-o" style="margin-left: 5px;color: lightgray;"></i></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" style="border: 1px solid black;border-top: none;">
+                        <div class="tab-pane active" id="1">
+                            <div class="ledger-tx-heading row">
+                                <div class="transactions-date-heading-container transactions-heading-text-border transactions-heading-text-container col-xs-3">Created</div>
+                                <div class="col-xs-9">
+                                    <div class="transactions-heading-text-container transactions-heading-text-border col-xs-8 noleftpadding">Address</div>
+                                    <div class="transactions-heading-text-container text-center col-xs-4">Received <span class="denomination">BTC</span></div>
+                                </div>
+                            </div>
+                            <ul class="ledger-list">
+                                <li class="ledger-list-item">
+                                    <div class="ledger-tx-node row">
+                                        <div class="col-xs-3 norightpadding">
+                                            <div class="ledger-handle text-center">
+                                                <span>Nov 26, 2019</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 noleftpadding" style="background-color: #F0F9FC">
+                                            <div class="col-xs-8 ledger-node-content more-height norightpadding">
+                                                <span class="ledger-node-content-text text-center">3KrRPoMMH5fZ4MCYTXFX8xoHPgNgNkYvwC</span>
+                                            </div>
+                                            <div class="ledger-node-content text-center col-xs-4">0</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="panel-footer1">
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <a routerLink='/Transaction-History' class="button button-small button-border button-rounded">All Transactions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="2">
+                        <div>
+                        	<h3 style="padding: 10px;color: gray; text-align: center">No Transactions</h3>
+                        </div>
+                            
+                            <div class="panel-footer1">
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <a routerLink="/ransaction-History" class="button button-small button-border button-rounded">All Transactions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>
+

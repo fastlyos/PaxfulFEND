@@ -1,0 +1,611 @@
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    margin-top: 60px;
+    background-image: none;
+
+}
+.carousel-control.left {
+    right: auto;
+    left: 0;
+    margin-top: 60px;
+    background-image: none;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  /*background:url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');*/
+  background-size:cover;
+  }
+.item-2{
+  /*background:url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');*/
+   background-size:cover;
+}
+.item-3{
+  /*background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');*/
+   background-size:cover;
+}
+
+/**:target ~ .item-1 {
+    opacity: 0;
+  }*/
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+@media only screen and (max-width: 600px) {
+ .payment-hide{
+ 	display: none;
+ }
+}
+
+.imgBG{
+  background-image: url("/assets/images/footer-21.png");
+  height: 400px;
+  background-color: #efefef;
+  margin-top: 10px;
+  border-image: 24px;
+}
+.Tabs__inner {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    width: 100%;
+}
+.TabsItem__activeItem {
+    background-color: #ffffff;
+}
+.Tabs__inner img{
+  width: 30%;
+  cursor: pointer;
+
+}
+.TabsItem__item{
+  cursor: pointer;
+}
+.Tabs__inner{
+  display: flex;
+}
+.tableborder p{
+  border: 1px solid black;
+  text-align: center;padding: 10px;
+}
+.carousel-content{
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+    color: #666;
+    height: auto;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding: 3rem;
+    width: 100%;
+}
+.Testimonials-content{
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+.actionsBoard__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 3.2rem;
+    height: 100%;
+}
+.actionsBoard__imageWrap {
+    margin-bottom: 2rem;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    display: -webkit-box;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex: 1 0 6rem;
+    width: 6rem;
+    height: 5rem;
+    max-height: 5rem;
+}
+.actionsBoard__image {
+    width: 7.2rem;
+    max-height: 5rem;
+    margin-left: 135px;
+}
+.actionsBoard__body {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex: 1 0 calc(100% - 8.7rem);
+}
+.actionsBoard__title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600!important;
+    line-height: 2.2rem;
+}
+.actionsBoard__description {
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.u-flex-grow {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.BuyCoinsTabs__container {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.BuyCoinsTabs__selected {
+    font-weight: 600;
+    border-bottom-color: #04b4e8;
+    color: #212121;
+    font-size: 1.2rem;
+}
+.BuyCoinsTabs__tab {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 1rem;
+    height: 62px;
+}
+.BuyCoinsTabs__tab {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    color: #888888;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 12px;
+    padding: 1rem;
+    border-bottom: 2px solid #cccccc;
+    height: 46px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-transition: border-bottom-color 0.4s;
+    transition: border-bottom-color 0.4s;
+}
+.BuyCoinsTopPaymentsItem__icon {
+    width: 33px;
+}
+.c-buyWidget__columnLabel.btcLogoImage img {
+    width: 44px;
+    vertical-align: middle;
+}
+.BuyCoinsTopPaymentsItem__wrapText {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.u-flex-grow label{
+  color: #C7C7C7;
+  font-size: 14px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.c-section {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    position: relative;
+}
+.selling-bitcoin-wrapper {
+    border-radius: 6rem;
+    background-repeat: no-repeat;
+    /* background-image: -webkit-gradient(linear,left top,left bottom,from(#8b66b6),to(#623598)); */
+    background-image: linear-gradient(180deg,#8b66b6 0,#623598);
+    padding: 3rem;
+}
+
+
+
+.c-tempBuyWidget {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 3.5rem;
+    border: 1px solid #ccc;
+}
+.c-buyWidget__leftColumn {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+.BuyCoinsTabs__tab:active{
+    border-bottom-color: #04b4e8;
+    color: #212121;
+}
+
+.BuyCoinsTabs__tab:hover,
+.BuyCoinsTabs__tab:focus{
+    border-bottom-color: #04b4e8;
+    color: #212121;
+}
+.BuyCoinsTopPayments__container {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    font-size: 12px;
+    min-height: 200px;
+}
+.BuyCoinsTopPaymentsItem__item {
+    width: 33.3%;
+    height: 100px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 2px;
+    border-radius: 1.2rem;
+    color: #888888;
+    cursor: pointer;
+}
+
+.BuyCoinsTopPaymentsItem__icon {
+    width: 33px;
+}
+.BuyCoinsTopPaymentsItem__wrapText {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.BuyCoinsTopPaymentsItem__text {
+    word-break: break-word;
+    margin-top: 0.2rem;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding-bottom: 0.3rem;
+    max-height: 49.7px;
+    font-size: 13px;
+    color: #717171;
+    line-height: 1.3;
+    -webkit-line-clamp: 3;
+}
+.c-buyWidget__paymentInput {
+    margin-bottom: 15px;
+}
+.c-buyWidget__columnLabel {
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    height: 44px;
+    margin-top: 10px;
+    line-height: 44px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+ .CurrencyAmountPicker__currencyAmountPicker {
+    border: 1px solid #d8d8d8;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: flex;
+    height: 48px;
+    padding: 3px;
+}
+
+.c-buyWidget .c-formGroup+.c-formGroup {
+    margin-top: 15px;
+}
+.c-buyWidget .c-formGroup {
+    text-align: initial;
+    position: relative;
+    margin-top: 10px;
+}
+.c-buyWidget .c-formGroup label {
+    text-align: left;
+}
+.c-buyWidget .c-formGroup__label {
+    font-size: 10px;
+    font-weight: 600;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin-bottom: 6px;
+    margin-left: 16px;
+    color: #888!important;
+}
+.c-buyWidget .c-formGroup__inputText {
+    height: 48px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    padding: 13px 16px;
+    color: #212121;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    box-shadow: none!important;
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    appearance: none!important;
+    background-clip: padding-box;
+}
+.c-buyWidget .c-formGroup__helpText {
+    margin-top: 16px;
+    font-size: 12px;
+    /*text-align: center;*/
+    color: #888!important;
+}
+.c-buyWidget .c-formGroup__helpText span {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #212121;
+}
+.c-buyWidget .c-formGroup__helpText__description {
+    margin-top: .3rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.7rem;
+}
+
+.c-buyWidget .btnSearch {
+    margin-top: 20px;
+}
+.c-buyWidget__footer {
+    padding: 2rem;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    padding: 32px 0;
+    border-radius: 0 0 .6rem .6rem;
+}
+.CurrencyAmountPicker__controlWrapper {
+    padding: 16px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #d8d8d8;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.CurrencyAmountPicker__selectWrapper {
+    position: relative;
+}
+.CurrencyAmountPicker__selectContainer.CurrencyAmountPicker__isVisible {
+    display: block;
+    overflow-y: auto;
+}
+.CurrencyAmountPicker__singleSelectContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100%;
+}
+ .CurrencyAmountPicker__backButton {
+    border: none;
+    background-color: transparent;
+    flex-basis: 16px;
+    padding: 0;
+    display: none;
+    margin-right: 16px;
+}
+.CurrencyAmountPicker__control {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-flow: row-reverse wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 48px;
+    border-radius: 24px;
+    padding: 8px 40px 8px 24px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+.CurrencyAmountPicker__placeholder {
+    position: absolute;
+    left: 72px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 1.15;
+    color: #a9a9a9;
+    pointer-events: none;
+}
+.CurrencyAmountPicker__menuContainer {
+    box-shadow: none;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #333333;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    min-height: 0;
+}
+.css-1hwfws3 {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    padding: 2px 8px;
+    overflow: hidden;
+}
+.CurrencyAmountPicker__menuList {
+    position: relative;
+    padding: 0;
+    height: 500px;
+    overflow: scroll;
+}
+.CurrencyAmountPicker__groupHeader {
+    display: -webkit-box;
+    display: flex;
+    width: 400px;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+.CurrencyAmountPicker__popularCurrenciesWrapper {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #d8d8d8;
+}
+.CurrencyAmountPicker__selectedOption {
+    border: 1px solid #19bf33;
+    background-color: #f8fdf9;
+}
+.CurrencyAmountPicker__focusedOption {
+    background-color: #f7fcfe;
+    border-color: #00a5ef;
+}
+.CurrencyAmountPicker__allCurrenciesWrapper {
+    background-color: #ffffff;
+}
+.CurrencyAmountPicker__groupHeader {
+    display: -webkit-box;
+    display: flex;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}.CurrencyAmountPicker__currencyOption {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 7px 8px 7px 24px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+ .CurrencyAmountPicker__currencyAbbreviation {
+    min-width: 72px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    padding: 7px 16px;
+    border-radius: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.CurrencyAmountPicker__optionsWrapper {
+    padding: 5px;
+}
+.CurrencyAmountPicker__selectWrapper {
+    position: absolute;z-index: 1000;
+}
+.CurrencyAmountPicker__selectContainer.CurrencyAmountPicker__isVisible {
+    display: block;
+    overflow-y: auto;
+}
+.CurrencyAmountPicker__singleSelectContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100%;
+}

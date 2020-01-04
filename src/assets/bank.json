@@ -1,0 +1,49 @@
+[
+		{
+			"name": "Bank Transfer",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "Domestic Wire Transfer",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "Faster Payment System (FPS)",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "IMPS Transfer",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "International Wire Transfer (SWIFT)",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "PayID",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "SEPA",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "UPI Transfer",
+			"img":"bank-transfers"
+
+		},
+		{
+			"name": "Interac Online",
+			"img":"bank-transfers"
+
+		}
+
+]
+

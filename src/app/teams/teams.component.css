@@ -1,0 +1,72 @@
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;    
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+.landing li:before{
+
+	content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  font-size:18px;
+  color: blue;
+ /* border: 1px solid #00a5ef;
+  background-color: initial;
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;*/
+}
+
+
+.landingul ul{
+	list-style: none;
+}
+
+.teamspage span{
+    display: inline-block;
+    color: #a9a9a9;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+
+/*.landing li li:before {
+	    border: 1px solid #00a5ef;
+	    background-color: initial;
+}
+.landing li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00a5ef;
+}*/

@@ -1,0 +1,70 @@
+.column-links ul li {
+	list-style: none;
+}
+.nav-tabs[_ngcontent-c1] > li[_ngcontent-c1] > a[_ngcontent-c1] {
+     /*margin-right: 2px; */
+    /* line-height: 1.42857143; */
+    /* border-radius: 4px 4px 0 0; */
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    /* border-bottom-color: transparent; */
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+.toppadding {
+    padding-top: 50px;
+}
+
+.darker-bg {
+    background-color: #f5f5f5;
+}
+.title-center {
+    text-align: center;
+}
+
+.darker-bg h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.column-links ul{
+    margin-left: 0px !important;
+}
+/*.dashboardlinksize{
+    font-size: 14px;
+}
+*/.fancy-title{
+    border-bottom: 2px solid #bb87f1;
+}
+.column-links ul li::before {
+  content: "\25BA";
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: 0.8;
+  /*position: absolute;*/
+  /*top: 5px;*/
+  /*left: -10px;*/
+}
+.bottommargin{
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+}
+.classicDashboardUserWidget__quick_actions:hover span .dashboardlinksize{
+    color: black;
+}

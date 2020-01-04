@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56 50"
+	 style="enable-background:new 0 0 56 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3D3D3B;}
+	.st1{fill:#D8D5D4;}
+	.st2{fill:#E6E2E0;}
+	.st3{fill:#CCC4C1;}
+	.st4{fill:#ADA7A4;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="50" width="56" x="0" y="-50"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<rect x="10.1" y="19" class="st0" width="35.8" height="21.8"/>
+	<rect x="7.8" y="20.8" class="st1" width="4.7" height="18.2"/>
+	<path class="st2" d="M7.3,39h5.8c0.2,0,0.3,0.1,0.3,0.3v1.5H7v-1.5C7,39.1,7.1,39,7.3,39z"/>
+	<path class="st2" d="M13.1,20.8H7.3c-0.2,0-0.3-0.1-0.3-0.3V19h6.4v1.5C13.4,20.6,13.2,20.8,13.1,20.8L13.1,20.8z"/>
+	<rect x="19.1" y="20.8" class="st1" width="4.7" height="18.2"/>
+	<path class="st2" d="M18.6,39h5.8c0.2,0,0.3,0.1,0.3,0.3v1.5h-6.4v-1.5C18.2,39.1,18.4,39,18.6,39z"/>
+	<path class="st2" d="M24.3,20.8h-5.8c-0.2,0-0.3-0.1-0.3-0.3V19h6.4v1.5C24.7,20.6,24.5,20.8,24.3,20.8z"/>
+	<rect x="32.2" y="20.8" class="st1" width="4.7" height="18.2"/>
+	<path class="st2" d="M31.7,39h5.8c0.2,0,0.3,0.1,0.3,0.3v1.5h-6.4v-1.5C31.3,39.1,31.5,39,31.7,39z"/>
+	<path class="st2" d="M37.4,20.8h-5.8c-0.2,0-0.3-0.1-0.3-0.3V19h6.4v1.5C37.7,20.6,37.6,20.8,37.4,20.8z"/>
+	<rect x="43.4" y="20.8" class="st1" width="4.7" height="18.2"/>
+	<path class="st2" d="M42.9,39h5.8c0.2,0,0.3,0.1,0.3,0.3v1.5h-6.4v-1.5C42.6,39.1,42.8,39,42.9,39z"/>
+	<path class="st2" d="M48.7,20.8h-5.8c-0.2,0-0.3-0.1-0.3-0.3V19H49v1.5C49,20.6,48.9,20.8,48.7,20.8z"/>
+	<g>
+		<polygon class="st3" points="53.6,14.2 2.4,14.2 28,0 		"/>
+		<path class="st4" d="M2.4,14.2h51.3V18c0,0.5-0.4,1-1,1H3.3c-0.5,0-1-0.4-1-1V14.2z"/>
+	</g>
+	<g>
+		<path class="st3" d="M3.3,40.8h49.3c0.5,0,1,0.4,1,1v2.3H2.4v-2.3C2.4,41.2,2.8,40.8,3.3,40.8z"/>
+		<path class="st4" d="M1,44.1H55c0.5,0,1,0.4,1,1v4c0,0.5-0.4,1-1,1H1c-0.5,0-1-0.4-1-1v-4C0,44.5,0.4,44.1,1,44.1z"/>
+	</g>
+</g>
+</svg>

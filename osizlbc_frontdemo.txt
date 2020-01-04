@@ -1,0 +1,17 @@
+git@bitbucket.org:osizlbc/osizlbc_frontdemo.git
+
+Domain Name : osizlbc.osiztechnologies.in
+osizlbcadmin.osiztechnologies.in
+osizlbcback.osiztechnologies.in
+Ip address : 192.168.2.91
+Username : osizlbc
+Password : ughkevrthnfdtr
+
+Ip address : 192.168.1.75
+Mongo DB Name : uhdevbdkbjknl
+Mongo DB Username : uenhgbdfjubn
+Mongo DB Password : judnfjklbndfn
+Port Number : 16879
+
+
+ssh osizlbc@192.168.2.91

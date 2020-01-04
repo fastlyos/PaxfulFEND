@@ -1,0 +1,33 @@
+.category-list{
+	padding-left: 0;
+    /*margin-bottom: calc(16px * 1.5);*/
+    list-style: none;
+    border: 1px solid #eceeef;
+    border-radius: 4px;
+}
+
+.category-list li:not(:last-child) {
+    border-bottom: 1px solid #eceeef;
+}
+
+.category-list li a{
+    display: block;
+    padding: 15px;
+    text-decoration:none;
+    font-weight: 300;
+    color: inherit;
+
+ }
+
+ .active{
+ 		border-bottom: 3px solid red;
+ }
+
+
+
+.category-list li:hover,
+.category-list li:focus
+/*.category-list li:not(:first-child)*/
+{
+	border-bottom: 3px solid red;
+}

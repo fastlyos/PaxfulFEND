@@ -1,0 +1,14 @@
+.headerlinks>li+li:before {
+    content: "/\00a0";
+    padding: 0 5px;
+    color: #ccc;
+}
+.headerlinks li{
+    display: inline-block;
+    margin-top: 16%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+/*.TradeTitleLinks{
+	display: inline-flex;
+}*/

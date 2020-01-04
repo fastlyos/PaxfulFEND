@@ -1,0 +1,41 @@
+
+<section style="margin-top: 100px;">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-lg-12">
+				<div class="">
+					<h2 class="send_recive-heading">Currnt Balance</h2>
+					<p><span class="BTC-amt">0 BTC</span>
+					<small class="INR-amt"> ≈ 0 INR</small></p>
+					<button class="btn s-button">ADD MONEY</button>
+				</div>
+			</div>
+			<div class="col-lg-8 offset-2 col-sm-12">
+				<span class="helpblock">The worth of your bitcoin in INR varies depending on the current market price. Don’t worry, this is normal. You’ll still have the same amount of bitcoin in your wallet.</span>
+				<button class="btn send-bitcoin-btn">Send Bitcoin</button>
+				<a href="" class="pull-right help-link">Help using wallet</a>
+			</div>
+			<div class="col-lg-8 offset-2" style="margin-top: 50px;">
+				<div class="row">
+					<div class="col-lg-3">
+					<div class="qrcodeimg">
+						<qrcode [qrdata]="'Your QR code data string'" [size]="140" [level]="'M'"></qrcode>	
+					</div>
+						
+					</div>
+					<div class="col-lg-8">
+						<div class="add-margin-top">
+							<p class="address-desc pull-left">YOUR BITCOIN DEPOSIT ADDRESS IS BELOW  <i class="fa fa-question-circle-o" aria-hidden="true"></i></p>
+							<p class="pull-left">3KrRPoMMH5fZ4MCYTXFX8xoHPgNgNkYvwC</p>
+							<div class="pull-left">
+								<button class="btn copy-button">copy adderss</button>
+								<a href="" class="new-address">Get a new address</a>	
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> 

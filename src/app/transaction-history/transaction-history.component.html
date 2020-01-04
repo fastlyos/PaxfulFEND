@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+<section style="background-color: #F5F5F5">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 TradeTitle">
+				<h2>TRANSACTIONS</h2>
+				<p>All your transactions</p>
+			</div>
+			<div class="col-lg-6">
+				<ol class="headerlinks pull-right">
+					<li>Active Trades</li>
+					<li> Offers </li>
+					<li>Transactions</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="BackGround-Color">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 mt-4 text-center">
+				<div>
+					<ul class="TradeHistory-list">
+						<li class=""><a  [ngClass]="{'activeFilter1' : activeId === '1'}" (click)="ChangeActiveId('1')" checked>All</a></li>
+						<li class=""><a  [ngClass]="{'activeFilter' : activeId === '2'}" (click)="ChangeActiveId('2')">Trade Transaction</a></li>
+						<li class=""><a  [ngClass]="{'activeFilter' : activeId === '3'}" (click)="ChangeActiveId('3')">Non-Trade Transaction</a></li>
+						<li class=""><a  [ngClass]="{'activeFilter' : activeId === '4'}" (click)="ChangeActiveId('4')">Recevie</a></li>
+						<li class=""><a  [ngClass]="{'activeFilter2' : activeId === '5'}" (click)="ChangeActiveId('5')">Sent-out</a></li>
+						<!-- <li class=""><a>Dispute</a></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<button type="submit" class="btn f-button">Export Trade as CSV</button>	
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container-fluid">
+		<div class="row mb-4 mt-4 marginbottom_XS">
+			<div class="col-lg-12">
+				<div id="transactions" class="table-responsive js-fullstory-exclude">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Amount <span class="denomination">Fiat</span></th>
+                            <th>In bitcoin</th>
+                            <th>Balance <span class="denomination">USD</span></th>
+                            <th>In bitcoin</th>
+                            <th>Sent to</th>
+                            <th>Transaction Id</th>
+                            <th>Time</th>
+                            <th>Trade</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                                                    </tbody>
+                    </table>
+                    <div class="text-center">
+                                            </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+<app-footer></app-footer>

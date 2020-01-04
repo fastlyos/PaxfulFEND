@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<section style="background-color: #F5F5F5">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 TradeTitle">
+				<h2>NOTIFICATIONS</h2>
+				<p>All your Notifications</p>
+			</div>
+			<div class="col-lg-6">
+				<ol class="headerlinks pull-right">
+					<li>Active Trades</li>
+					<li> Offers </li>
+					<li>Notification</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mt-4 mb-4">
+        <div class="Notification_SubHeading">
+            <h3 class="col-lg-12 Notification_title-block">Live feed</h3>
+            <p class="denomination">Nothing new yet...</p>
+        </div>
+        <div id="notifications" class="table-responsive mt-4 mb-4">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Message</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr data-type="signed_up">
+                    <td>Sign up successful</td>
+                    <td data-recording-disable="">
+                      <a routerLink='/VendorDashboard'>
+                        You just signed up. Welcome!</a>
+                    </td>
+                    <td class="text-muted">Nov 26, 2019, 1:36 AM</td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

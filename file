@@ -1,0 +1,216 @@
+<carousel>
+          <slide>
+            <div class="text-center py-5">
+              <!-- <h2></h2> -->
+              <div class="lead">
+                <h3>"Great looking website with all the possible ways to buy bitcoins all over the world with quick and professional support!"</h3>
+                <p><a href="">FAHIMIPOUR</a> Osiz VENDOR</p>
+              </div>
+            </div>
+          </slide>
+          <slide>
+            <div class="text-center py-5">
+              <!-- <h2>Second custom content</h2> -->
+              <div class="lead">
+                <h3>"As a trader on multiple services and venues, Osiz has impressed us with their professional support staff by reacting quickly to any issues. They are one of the fastest growing venues for digital currency traders."</h3>
+                <p><a href="">BITCOINFOREVER</a> Osiz VENDOR</p>
+              </div>
+            </div>
+          </slide>
+          <slide>
+            <div class="text-center py-5">
+              <!-- <h2>Third custom content</h2> -->
+              <div class="lead">
+                <h3>"Osiz is a true 24/7/365 trading platform that is innovative and secure!"</h3>
+                <p><a href="">THOMASMARKETS</a> Osiz VENDOR </p>
+              </div>
+            </div>
+          </slide>
+        </carousel>
+
+
+
+
+ <div class="col-lg-4">
+                <div class="sell-spend-bitcoin-item">
+                    <img src="assets/images/icon-cash-big.svg">
+                    <h4>Cash</h4>
+                    <div class="sell-spend-bitcoin-content">Get cash delivered right to your door or arrange a pickup at an agreed location nearby.</div>
+                    <div class="externallink-bitcoin"><a href="#">Cash out your bitcoin</a></div>
+                </div>
+            </div>
+
+
+<!-- 
+<section class="BackGroundColor">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-12  col-md-12 col-sm-12 online-transfers-content">
+        <p>Buy and sell bitcoin using<strong> over 300 payment options.</strong></p>
+            <p>Trade directly with other people just like you!</p>
+      </div>
+    </div>
+   
+  </div>
+</section> -->
+
+<!-- Buy and sell Bitcoin
+<section class="BackGroundColor">
+  <div class="container"> 
+      <div class="row">
+          <div class="col-lg-6 buysell-bitcoin-row">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2 buysell-bitcoin">
+                    <img src="assets/images/icon-bank-big.svg">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 buy-and-sell">
+                      <a style="font-weight: bold;">Bank transfers</a><br>
+                      <span>Fast</span>
+                      <span> Best price</span>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                      <div class="c-paymentMethodGroup__description">
+                         Buy bitcoin by making a transfer from your bank account to a bitcoin vendor on Osiz. Once they receive the funds, bitcoin is sent to you. Works worldwide.
+                    </div>                       
+                    <footer class="c-paymentMethodGroup__footer">
+                        <div class="c-paymentMethodGroup__actions">
+                            <a href="" class="homepage_button">Buy with bank transfer</a>
+                        </div>
+                    </footer>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6 buysell-bitcoin-row">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                      <img src="assets/images/icon-online-big.svg">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 buy-and-sell">
+                      <a style="font-weight: bold;">Online wallets</a><br>
+                      <span>< 1 HOUR</span>
+                      <span> Best price</span>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                      <div class="c-paymentMethodGroup__description">
+                        Don’t want to leave the house? You can use a number of popular payment apps. Once the transfer is complete, bitcoin is yours.
+                      </div>
+                                           
+                    <footer class="c-paymentMethodGroup__footer">
+                        <div class="c-paymentMethodGroup__actions">
+                            <a href="" class="homepage_button">Buy with bank transfer</a>
+                        </div>
+                    </footer>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
+       <div class="row">
+          <div class="col-lg-6 buysell-bitcoin-row">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <img src="assets/images/icon-giftcard-big.svg">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 buy-and-sell">
+                      <a style="font-weight: bold;">Gift cards</a><br>
+                      <span>INSTANT</span>
+                      <span>PRIVATE</span>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  
+                      <div class="c-paymentMethodGroup__description">
+                         Want to buy $20 of bitcoin fast? Pick up a gift card with cash, save the receipt, and exchange it here for instant bitcoin.
+                    </div>                       
+                    <footer class="c-paymentMethodGroup__footer">
+                        <div class="c-paymentMethodGroup__actions">
+                            <a href="" class="homepage_button">Buy with bank transfer</a>
+                        </div>
+                    </footer>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6 buysell-bitcoin-row">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                      <img src="assets/images/icon-cash-big.svg">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 buy-and-sell">
+                      <a style="font-weight: bold;">Cash</a><br>
+                      <span>INSTANT</span>
+                      <span> ID MAY BE REQUIRED</span>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                      <div class="c-paymentMethodGroup__description">
+                         Buy bitcoin with cash. No bank account needed. A bitcoin vendor on Osiz will guide you to deposit cash into their account. Once they receive the deposit, bitcoin is sent to you.
+                      </div>
+                    <footer class="c-paymentMethodGroup__footer">
+                        <div class="c-paymentMethodGroup__actions">
+                            <a href="" class="homepage_button">Buy with bank transfer</a>
+                        </div>
+                    </footer>
+                </div>
+              </div>
+          </div>
+      </div>
+
+       <div class="row">
+          <div class="col-lg-6 buysell-bitcoin-row">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <img src="assets/images/icon-card-big.svg">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 buy-and-sell">
+                      <a style="font-weight: bold;">Debit/credit cards</a><br>
+                      <span>INSTANT</span>
+                      <span> ID REQUIRED</span>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                      <div class="c-paymentMethodGroup__description">
+                         Conveniently use your debit or credit card to purchase bitcoin on Osiz.
+                      </div>
+                    <footer class="c-paymentMethodGroup__footer">
+                        <div class="c-paymentMethodGroup__actions">
+                            <a href="" class="homepage_button">Buy with bank transfer</a>
+                        </div>
+                    </footer>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6 buysell-bitcoin-row">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                      <img src="assets/images/icon-digital.svg">
+                  </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 buy-and-sell">
+                      <a style="font-weight: bold;">Digital currencies</a><br>
+                      <span>INSTANT</span>
+                      <span> PRIVATE</span>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                      <div class="c-paymentMethodGroup__description">
+                         Trade your favorite digital currencies or tokens and instantly get bitcoin transferred directly to your wallet.
+                      </div>
+                    <footer class="c-paymentMethodGroup__footer">
+                        <div class="c-paymentMethodGroup__actions">
+                            <a href="" class="homepage_button">Buy with bank transfer</a>
+                        </div>
+                    </footer>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> -->

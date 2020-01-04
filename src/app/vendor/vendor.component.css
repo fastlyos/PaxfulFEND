@@ -1,0 +1,141 @@
+table tr,td,th{
+	border-bottom: 1px solid lightgray;
+	padding: 10px;
+	text-align: center;
+	width: 500px;
+}
+.active{
+	background-color: #5C2791;
+	color: white;
+	font-weight: 300;
+	}
+
+.vendors-page #footer-cta {
+    white-space: normal!important;
+    min-height: 13px;
+    height: auto;
+    line-height: 1.5;
+    padding-top: 17px;
+    padding-bottom: 15px;
+}
+body:not(.device-touch) .button {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.button.button-3d {
+    border-radius: 2px;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.button.button-xlarge {
+    font-size: 18px;
+    height: auto;
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding: 16px 32px;
+    white-space: normal;
+}
+.button-red {
+    background-color: #c02942;
+}
+.center {
+    text-align: center!important;
+}
+.center a{
+	text-decoration: none;color: white;font-weight: 600;
+}
+.divider.divider-center,
+.divider.divider-center.divider-short {
+    text-align: center;
+}
+.divider {
+    position: relative;
+    overflow: hidden;
+    margin: 35px 0;
+    color: black;
+    width: 100%;
+}
+
+.divider i {
+    width: 18px;
+    height: 18px;
+    line-height: 1;
+    font-size: 18px!important;
+    text-align: center;
+}
+.icon-circle:before {
+    content: "\e7b0";
+}
+.divider i{
+	color: gray;
+    opacity: 0.5;
+}
+.divider:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: lightgray;
+    width: 140px;
+}
+.divider:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: lightgray;
+    width: 140px;
+}
+.tab:nth-child(1) { margin-left: 43%; }
+.tabs {
+  position: relative;   
+  min-height: 200px; 
+  clear: both;
+  margin: 35px 0;
+}
+.tab {
+  float: left;
+  border-radius: 24px;
+  margin-left: 10px;
+}
+.tab label {
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  margin-left: -5px; text-align: center;
+  font-size: 10px;height: 27px;width: 50px;
+  position: relative;
+  left: 5px; 
+  border-radius: 20px;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #fff;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+[type=radio]:checked ~ label {
+  background: #5C2791;
+  color: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+.textAlignLeft{
+  text-align: left;
+}
+.textAlignRight{
+  text-align: right;
+}
